@@ -79,7 +79,7 @@
     'image_delete'         	=> 'عکس های پاک شده',
     'image_upload'         	=> 'آپلود تصویر',
     'import'         	    => 'واردات',
-    'import-history'        => 'پیشینه واردات',
+    'import-history'        => 'سابقه واردات',
     'asset_maintenance'        => 'نگهداشت دارایی',
     'asset_maintenance_report' => 'گزارش تعمیر ونگهداری دارایی',
     'asset_maintenances'       => 'نگهداشت دارایی',
