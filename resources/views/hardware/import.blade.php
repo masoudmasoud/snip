@@ -122,9 +122,9 @@
 
                         <table class="table table-striped" id="upload-table">
                             <thead>
-                                <th>File</th>
-                                <th>Created</th>
-                                <th>Size</th>
+                                <th>فایل</th>
+                                <th>زمان بارگذاری</th>
+                                <th>حجم</th>
                                 <th></th>
                             </thead>
                             <tbody>

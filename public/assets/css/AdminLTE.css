@@ -1214,7 +1214,7 @@ a:focus {
 }
 .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
   position: absolute;
-  right: 0;
+  right: auto;
   left: auto;
 }
 @media (max-width: 991px) {
@@ -1747,7 +1747,7 @@ a:focus {
   position: relative;
 }
 .box-header > .box-tools.pull-right .dropdown-menu {
-  right: 0;
+  right: auto;
   left: auto;
 }
 .btn-box-tool {
@@ -3194,6 +3194,7 @@ table.text-center th {
 .register-box {
   width: 360px;
   margin: 7% auto;
+  direction:rtl;
 }
 @media (max-width: 768px) {
   .login-box,

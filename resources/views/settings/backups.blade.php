@@ -18,9 +18,9 @@
 
           <table class="table table-striped">
             <thead>
-              <th>File</th>
-              <th>Created</th>
-              <th>Size</th>
+              <th>فایل</th>
+              <th>زمان بارگذاری</th>
+              <th>حجم</th>
               <th></th>
             </thead>
             <tbody>

@@ -278,7 +278,7 @@
 }
 
 .pull-right .dropdown-menu {
-    right: 0;
+    right: auto;
     left: auto;
 }
 

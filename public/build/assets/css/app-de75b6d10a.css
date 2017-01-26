@@ -1210,7 +1210,7 @@ a:focus {
 }
 .navbar-custom-menu > .navbar-nav > li > .dropdown-menu {
   position: absolute;
-  right: 0;
+  right: auto;
   left: auto;
 }
 @media (max-width: 991px) {
@@ -1730,7 +1730,7 @@ a:focus {
   position: relative;
 }
 .box-header > .box-tools.pull-right .dropdown-menu {
-  right: 0;
+  right: auto;
   left: auto;
 }
 .btn-box-tool {
@@ -4888,11 +4888,11 @@ fieldset[disabled] .btn-yahoo.active {
   cursor: move;
 }
 .user-image-inline {
-  float: left;
+  float: right;
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-left: 10px;
 }
 .input-group .input-group-addon {
   background-color: #f4f4f4;

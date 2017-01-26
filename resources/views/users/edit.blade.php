@@ -79,8 +79,8 @@
   <!-- Custom Tabs -->
 <div class="nav-tabs-custom">
   <ul class="nav nav-tabs">
-    <li class="active"><a href="#tab_1" data-toggle="tab">Information</a></li>
-    <li><a href="#tab_2" data-toggle="tab">Permissions</a></li>
+    <li class="active"><a href="#tab_1" data-toggle="tab">اطلاعات</a></li>
+    <li><a href="#tab_2" data-toggle="tab">مجوز ها</a></li>
   </ul>
 
   <div class="tab-content">
