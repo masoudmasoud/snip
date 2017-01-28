@@ -1,14 +1,14 @@
 <?php
 
 return array(
-    'about_groups_title'            => 'درباره گروه ها',
-    'about_groups'                  => 'گروه ها برای عمومی کردن مجوزهای کاربر استفاده می شوند.',
-    'group_management' 	 	=> 'مدیریت گروه',
-    'create' 	 	 	    => 'ایجاد گروه جدید',
-    'update' 	 		        => 'ویرایش گروه',
-    'group_name' 	 		=> 'نام گروه',
-    'group_admin' 	 		=> 'مدیر گروه',
-    'allow' 	 			=> 'اجازه می دهد',
-    'deny' 	 				=> 'رد کردن',
+    'about_groups_title'            => 'About Groups',
+    'about_groups'                  => 'Groups are used to generalize user permissions.',
+    'group_management' 	 	=> 'إدارة المجموعة',
+    'create' 	 	 	    => 'Create New Group',
+    'update' 	 		        => 'Edit Group',
+    'group_name' 	 		=> 'اسم المجموعة',
+    'group_admin' 	 		=> 'إدارة المجموعة',
+    'allow' 	 			=> 'سماح',
+    'deny' 	 				=> 'رفض',
 
 );

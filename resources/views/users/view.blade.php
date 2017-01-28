@@ -375,7 +375,7 @@
               <thead>
                 <tr>
                   <th class="col-md-1"></th>
-                  <th class="col-md-2">Date</th>
+                  <th class="col-md-2">تاریخ</th>
                   <th class="col-md-2"><span class="line"></span>{{ trans('table.action') }}</th>
                   <th class="col-md-3"><span class="line"></span>{{ trans('general.asset') }}</th>
                   <th class="col-md-2"><span class="line"></span>{{ trans('table.by') }}</th>

@@ -2,15 +2,15 @@
 
 return array(
 
-    'actions' 	                => 'اقدامات',
-    'add'    	                => 'افزودن جدید',
-    'cancel'                    => 'انصراف',
-    'checkin_and_delete'  	    => 'بررسی و حذف کاربر',
+    'actions' 	                => 'الإجراءات',
+    'add'    	                => 'Add New',
+    'cancel'                    => 'Cancel',
+    'checkin_and_delete'  	    => 'Checkin & Delete User',
     'delete'  	                => 'حذف',
-    'edit'    	                => 'ويرايش',
-    'restore' 	                => 'بازیابی',
-    'request'                   => 'درخواست',
-    'submit'  	                => 'ثبت کردن',
-    'upload'                    => 'بارگزاری',
+    'edit'    	                => 'تعديل',
+    'restore' 	                => 'إستعادة',
+    'request'                   => 'Request',
+    'submit'  	                => 'إرسال',
+    'upload'                    => 'Upload',
 
 );

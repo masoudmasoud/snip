@@ -2,16 +2,16 @@
 
 return array(
 
-    'create'				=> 'ایجاد مدل دارایی',
-    'created_at' 			=> 'ایجاد شده در',
+    'create'				=> 'Create Asset Model',
+    'created_at' 			=> 'Created at',
     'eol'	 				=> 'EOL',
-    'modelnumber'   		=> 'شماره مدل.',
-    'name'      			=> 'نام مدل دارایی',
-    'numassets' 			=> 'دارایی',
-    'title'					=> 'مدل دارایی',
-    'update'				=> 'بروزسانی مدل دارایی',
-    'view'					=> 'نمایش مدل دارایی',
-    'update'				=> 'بروزسانی مدل دارایی',
-    'clone'				=> 'مدل شگرف',
-    'edit'				=> 'تغییر مدل',
+    'modelnumber'   		=> 'Model No.',
+    'name'      			=> 'Asset Model Name',
+    'numassets' 			=> 'Assets',
+    'title'					=> 'Asset Models',
+    'update'				=> 'Update Asset Model',
+    'view'					=> 'View Asset Model',
+    'update'				=> 'Update Asset Model',
+    'clone'				=> 'Clone Model',
+    'edit'				=> 'Edit Model',
 );

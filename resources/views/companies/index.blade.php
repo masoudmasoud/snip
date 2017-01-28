@@ -61,9 +61,9 @@
 
     <!-- side address column -->
     <div class="col-md-3">
-      <h4>About Companies</h4>
+      <h4>درباره شرکت ها</h4>
       <p>
-        You can use companies as a simple placeholder, or you can use them to restrict asset visibility and availability to users with a specific company.
+		شما می توانید از شرکت ها به عنوان یک فیلتر ساده استفاده کنید، یا می توانید برای محدود کردن مشاهده و دسترسی دارایی ها برای کاربران از آنها استفاده کنید.
       </p>
 
     </div>

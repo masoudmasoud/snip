@@ -2,28 +2,21 @@
 
 return array(
 
-    'asset'             => 'دارایی',
-    'checkin'           => 'چک در',
-    'create'            => 'ایجاد مجوز
-',
-    'expiration'        => 'تاریخ انقضا',
-    'license_key'       => 'کلید محصول',
-    'maintained'        => 'نگهداری',
-    'name'              => 'نام نرم افزار
-',
-    'no_depreciation'   => 'هنوز مستهلک نشده
-',
-    'purchase_order'    => 'شماره سفارش خرید',
-    'reassignable'      => 'واگذاری مجدد
-',
-    'remaining_seats'   => 'کرسی های باقی مانده
-',
-    'seats'             => 'صندلی
-',
-    'termination_date'  => 'تاریخ پایان
-',
-    'to_email'          => ' مجوز به ایمیل',
-    'to_name'           => 'مجوز به نام',
-    'update'            => 'به روز رسانی مجوز',
-    'checkout_help'     => 'شما باید یک مجوز به یک دارایی سخت افزار و یا یک شخص را بررسی کنید. شما می توانید هر دو را انتخاب کنید، اما مالک دارایی باید شخص شما چک کردن دارایی به مطابقت.'
+    'asset'             => 'Asset',
+    'checkin'           => 'Checkin',
+    'create'            => 'Create License',
+    'expiration'        => 'Expiration Date',
+    'license_key'       => 'Product Key',
+    'maintained'        => 'Maintained',
+    'name'              => 'Software Name',
+    'no_depreciation'   => 'Do Not Depreciate',
+    'purchase_order'    => 'Purchase Order Number',
+    'reassignable'      => 'Reassignable',
+    'remaining_seats'   => 'Remaining Seats',
+    'seats'             => 'Seats',
+    'termination_date'  => 'Termination Date',
+    'to_email'          => 'Licensed to Email',
+    'to_name'           => 'Licensed to Name',
+    'update'            => 'Update License',
+    'checkout_help'     => 'You must check a license out to a hardware asset or a person. You can select both, but the owner of the asset must match the person you\'re checking the asset out to.'
 );

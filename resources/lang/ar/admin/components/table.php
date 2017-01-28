@@ -1,5 +1,5 @@
 <?php
 
 return array(
-    'title'      				=> 'نام کامپیوننت',
+    'title'      				=> 'اسم المكون',
 );

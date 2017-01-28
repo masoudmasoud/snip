@@ -1,10 +1,10 @@
 <?php
 
 return array(
-	'eula_text'      			=> 'EULA',
-    'id'      					=> 'شناسه',
-    'parent'   					=> 'مجموعه پدر',
-    'require_acceptance'      	=> 'پذیرش',
-    'title'      				=> 'نام دسته دارایی',
+	'eula_text'      			=> 'اتفاقية ترخيص المستخدم',
+    'id'      					=> 'الرقم',
+    'parent'   					=> 'التصنيف الأب',
+    'require_acceptance'      	=> 'القبول',
+    'title'      				=> 'اسم التصنيف',
 
 );

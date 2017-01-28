@@ -1,8 +1,8 @@
 <?php
 
     return [
-        'title'         => 'نگهداشت دارایی',
-        'asset_name'    => 'نام دارایی',
-        'is_warranty'   => 'ضمانت',
-        'dl_csv'        => 'دانلود CSV'
+        'title'         => 'صيانة الاُصل',
+        'asset_name'    => 'Asset Name',
+        'is_warranty'   => 'الضمان',
+        'dl_csv'        => 'التنزيل كملف CSV'
     ];

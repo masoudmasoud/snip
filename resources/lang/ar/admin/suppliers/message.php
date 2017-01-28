@@ -2,23 +2,23 @@
 
 return array(
 
-    'does_not_exist' => 'تامین کننده وجود ندارد.',
-    'assoc_users'	 => 'این شرکت در حال حاضر همراه با حداقل یک مدل است و قادر به حذف نمی شود. لطفا بروز مدل های خود را به دیگر تامین کننده این مرجع و دوباره امتحان کنید. ',
+    'does_not_exist' => 'Supplier does not exist.',
+    'assoc_users'	 => 'This supplier is currently associated with at least one model and cannot be deleted. Please update your models to no longer reference this supplier and try again. ',
 
     'create' => array(
-        'error'   => 'تامین کننده ایجاد نشد, لطفا دوباره سعی کنید.',
-        'success' => 'تامین کننده با موفقیت ایجاد شده.'
+        'error'   => 'Supplier was not created, please try again.',
+        'success' => 'Supplier created successfully.'
     ),
 
     'update' => array(
-        'error'   => 'تامین کننده آپدیت نشد, لطفا دوباره سعی کنید',
-        'success' => 'کارپرداز با موفقیت به روز رسانی شد.'
+        'error'   => 'Supplier was not updated, please try again',
+        'success' => 'Supplier updated successfully.'
     ),
 
     'delete' => array(
-        'confirm'   => 'آیا شما مطمئن هستید که می خواهید این کارپرداز را حذف کنید؟',
-        'error'   => 'در حذف کردن این کارپرداز مشکلی وجود داشت. لطفا دوباره تلاش کنید.',
-        'success' => 'کارپرداز با موفقیت حذف شد.'
+        'confirm'   => 'Are you sure you wish to delete this supplier?',
+        'error'   => 'There was an issue deleting the supplier. Please try again.',
+        'success' => 'Supplier was deleted successfully.'
     )
 
 );
