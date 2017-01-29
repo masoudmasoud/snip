@@ -50,11 +50,11 @@
                 @if (Input::get('status')!='Deleted')
                 <div id="toolbar">
                   <select name="bulk_actions" class="form-control select2">
-                      <option value="edit">Edit</option>
-                      <option value="delete">Delete</option>
-                      <option value="labels">Generate Labels</option>
+                      <option value="edit">ویرایش</option>
+                      <option value="delete">حذف</option>
+                      <option value="labels">تولید برچسب</option>
                   </select>
-                  <button class="btn btn-default" id="bulkEdit" disabled>Go</button>
+                  <button class="btn btn-default" id="bulkEdit" disabled>برو</button>
                 </div>
                   @endif
 
@@ -116,11 +116,11 @@
                         <tr>
                             <td colspan="12">
                                 <select name="bulk_actions" class="form-control">
-                                    <option value="edit">Edit</option>
-                                    <option value="delete">Delete</option>
-                                    <option value="labels">Generate Labels</option>
+                                    <option value="edit">ویرایش</option>
+                                    <option value="delete">حذف</option>
+                                    <option value="labels">تولید برچسب</option>
                                 </select>
-                                <button class="btn btn-default" id="bulkEdit" disabled>Go</button>
+                                <button class="btn btn-default" id="bulkEdit" disabled>برو</button>
                             </td>
                         </tr>
                     </tfoot> --}}

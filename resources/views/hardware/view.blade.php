@@ -12,6 +12,26 @@
 {{-- Right header --}}
 @section('header_right')
     @can('assets.manage')
+	
+<?php 
+
+include_once($_SERVER['DOCUMENT_ROOT'].'/snipe/resources/jdf.php');
+
+function cnv(string $datetime) {
+//$timezone = 0;//برای 3:30 عدد 12600 و برای 4:30 عدد 16200 را تنظیم کنید
+//$datetime = date("Y-m-d H:i:s");
+$piece = explode(' ', $datetime);
+//$now = date("Y-m-d", $piece[0]+$timezone);
+//$time = date("H:i:s", time()+$timezone);
+list($year, $month, $day) = explode('-', $piece[0]);
+list($hour, $minute, $second) = explode(':', $piece[1]);
+$timestamp = mktime($hour, $minute, $second, $month, $day, $year);
+$jalali_date = jdate("Y/m/d H:i:s",$timestamp);
+echo $jalali_date;
+}
+
+ ?>
+ 
 <div class="dropdown pull-right">
   <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">{{ trans('button.actions') }}
       <span class="caret"></span>
@@ -187,7 +207,7 @@
                       <tr>
                         <td>{{ trans('admin/hardware/form.date') }}</td>
                         <td>
-                          {{ date('M d, Y',strtotime($asset->purchase_date)) }}
+                          {{ $asset->purchase_date }}
                          </td>
                       </tr>
                     @endif
@@ -310,7 +330,7 @@
                       <tr>
                         <td>{{ trans('general.created_at') }}</td>
                         <td>
-                            {{ $asset->created_at->format('F j, Y h:iA') }}
+                            {{ cnv($asset->created_at) }}
                         </td>
                       </tr>
                     @endif
