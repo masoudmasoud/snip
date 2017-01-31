@@ -98,25 +98,6 @@
       <header class="main-header">
 
         <!-- Logo -->
-		<div style="color:#fff">
-<?php 
-
-include_once($_SERVER['DOCUMENT_ROOT'].'/snipe/resources/jdf.php');
-$timezone = 0;//برای 3:30 عدد 12600 و برای 4:30 عدد 16200 را تنظیم کنید
-$datetime = date("Y-m-d H:i:s");
-//echo $datetime . "<br>";
-$piece = explode(' ', $datetime);
-//$now = date("Y-m-d", $piece[0]+$timezone);
-//$time = date("H:i:s", time()+$timezone);
-list($year, $month, $day) = explode('-', $piece[0]);
-list($hour, $minute, $second) = explode(':', $piece[1]);
-$timestamp = mktime($hour, $minute, $second, $month, $day, $year);
-//echo $timestamp ."<br>";
-$jalali_date = jdate("Y/m/d H:i:s",$timestamp);
-echo $jalali_date;
-
- ?>
- </div>
 
         <!-- Header Navbar: style can be found in header.less -->
         <nav class="navbar navbar-static-top" role="navigation">
@@ -279,7 +260,7 @@ echo $jalali_date;
                             </h3>
                             <div class="progress xs">
                               <div class="progress-bar progress-bar-yellow" style="width: {{ $alert_items[$i]['percent'] }}%" role="progressbar" aria-valuenow="{{ $alert_items[$i]['percent'] }}" aria-valuemin="0" aria-valuemax="100">
-                                <span class="sr-only">{{ $alert_items[$i]['percent'] }}% Complete</span>
+                                <span class="sr-only">{{ $alert_items[$i]['percent'] }}% تکمیل شد</span>
                               </div>
                             </div>
                           </a>
@@ -289,7 +270,7 @@ echo $jalali_date;
                      </ul>
                    </li>
                    {{-- <li class="footer">
-                     <a href="#">View all tasks</a>
+                     <a href="#">مشاهده همه کارها</a>
                    </li> --}}
                  </ul>
                </li>

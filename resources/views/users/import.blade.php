@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Create a User
+ایجاد کاربر
 @parent
 @stop
 
@@ -24,21 +24,24 @@ Create a User
 
 			@if (Session::get('message'))
 			<p class="alert-danger">
-				You have an error in your CSV file:<br />
+				فایل شما خاوی خطا می باشد:<br />
 				{{ Session::get('message') }}
 			</p>
 			@endif
 
 			<p>
-				Upload a CSV file with one or more users.  Passwords will be auto-generated.  The CSV should have the <strong>first</strong> fields as: </p>
+				فایل csv با یک یا چند کاربر را بارگذاری کنید. رمز بور کاربران به صورت خودکار تولید می شود.فیلد <strong>اول</strong> فایل شما باید دارای مارد زیر باشد: </p>
+				
 
-        <p><strong>firstName,lastName, username, email, location_id, phone, jobtitle, employee_num, company_id</strong>. </p>
+        <p><strong>نام ،نام خانوادگی،نام کاربری،ایمیل،شماره مکان،شماره تماس،عنوان شغل،شماره استخدام،شماره شرکت</strong>. </p>
+		
 
         <p>Any additional fields to the right of those fields will be ignored. Email is optional, however users will not be able to recover their passwords or receive EULAs if you do not provide an email address. If you wish to include a company association, you must reference the ID number of an existing company - companies will not be created on the fly.
 			</p>
 
             @if (config('app.lock_passwords'))
-                <p>Note: Email notification for users is disabled for this installation.</p>
+                <p>نکته: اعلانات ایمیلی برای کاربران در این سیستم غیر فعال شده است</p>
+				
             @endif
 
             <div class="form-group {!! $errors->first('user_import_csv', 'has-error') }}">
@@ -53,7 +56,7 @@ Create a User
     				<div class="col-sm-2 ">
     				</div>
     				<div class="col-sm-5">
-    					{{ Form::checkbox('has_headers', '1', Input::old('has_headers')) }} This CSV has a header row
+    					{{ Form::checkbox('has_headers', '1', Input::old('has_headers')) }} فایل شما دارای هدر می باشد.
     				</div>
     			</div>
 
@@ -64,7 +67,7 @@ Create a User
     				</div>
     				<div class="col-sm-5">
     					{{ Form::checkbox('email_user', '1', Input::old('email_user')) }} Email these users their credentials? (Only possible where email address is included with user data.)
-    				</div>
+    				</div>اطلاعات کاربران برایشان ایمیل شود؟
     			</div>
 
     			<!-- Activate -->
@@ -72,7 +75,7 @@ Create a User
     				<div class="col-sm-2 ">
     				</div>
     				<div class="col-sm-5">
-    					{{ Form::checkbox('activate', '1', Input::old('activate')) }} Activate user?
+    					{{ Form::checkbox('activate', '1', Input::old('activate')) }} فعال کردن کاربر؟
     				</div>
     			</div>
 

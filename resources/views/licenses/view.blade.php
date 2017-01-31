@@ -6,7 +6,12 @@
  - {{ $license->name }}
 @parent
 @stop
+<?php 
 
+include_once($_SERVER['DOCUMENT_ROOT'].'/snipe/resources/convertdate.php');
+
+
+ ?>	
 {{-- Right header --}}
 @section('header_right')
 <div class="btn-group pull-right">
@@ -32,7 +37,7 @@
     <!-- Custom Tabs -->
     <div class="nav-tabs-custom">
       <ul class="nav nav-tabs">
-        <li class="active"><a href="#tab_1" data-toggle="tab">Details</a></li>
+        <li class="active"><a href="#tab_1" data-toggle="tab">جزئیات</a></li>
         <li><a href="#tab_2" data-toggle="tab">{{ trans('general.file_uploads') }}</a></li>
         <li><a href="#tab_3" data-toggle="tab">{{ trans('admin/licenses/general.checkout_history') }}</a></li>
 
@@ -87,6 +92,7 @@
                                 @endif
                             </td>
                             <td>
+                            <td>
                                 @if ($licensedto->asset_id)
                                         @can('assets.view')
                                             <a href="{{ route('view/hardware', $licensedto->asset_id) }}">
@@ -107,7 +113,7 @@
                                                 {{ trans('general.checkin') }}
                                                 </a>
                                             @else
-                                                <span>Assigned</span>
+                                                <span>اختصاص داده شده</span>
                                             @endif
                                         @else
                                             <a href="{{ route('checkout/license', $licensedto->id) }}" class="btn btn-info btn-sm">
@@ -329,7 +335,7 @@
                 </td>
                 <td>
                 @if ($file->filename)
-                  <a href="{{ route('show/licensefile', [$license->id, $file->id]) }}" class="btn btn-default">Download</a>
+                  <a href="{{ route('show/licensefile', [$license->id, $file->id]) }}" class="btn btn-default">دریافت</a>
                 @endif
                 </td>
                 <td>
@@ -368,7 +374,7 @@
                       @if (count($license->assetlog) > 0)
                       @foreach ($license->assetlog as $log)
                       <tr>
-                          <td>{{ $log->created_at }}</td>
+                          <td><?php cnv($log->created_at); ?></td>
                           <td>
                               @if (isset($log->user_id))
                               <a href="{{ route('view/user', $log->user_id)}}">{{ $log->user->fullName() }}</a>
@@ -405,7 +411,7 @@
                       @endforeach
                       @endif
                       <tr>
-                          <td>{{ $license->created_at }}</td>
+                          <td><?php cnv($license->created_at); ?></td>
                           <td>
                           @if ($license->adminuser) {{ $license->adminuser->fullName() }}
                           @else
@@ -445,7 +451,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="uploadFileModalLabel">Upload File</h4>
+        <h4 class="modal-title" id="uploadFileModalLabel">بارگذاری فایل</h4>
       </div>
       {{ Form::open([
       'method' => 'POST',
