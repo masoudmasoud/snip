@@ -38,10 +38,10 @@
                         <thead>
                         <tr>
                             <td></td>
-                            <td>ID</td>
-                            <td>Name</td>
-                            <td>Location</td>
-                            <td>Assigned To</td>
+                            <td>شماره</td>
+                            <td>نام</td>
+                            <td>مکان</td>
+                            <td>اختصاص دادن یه</td>
                         </tr>
                         </thead>
                         <tbody>

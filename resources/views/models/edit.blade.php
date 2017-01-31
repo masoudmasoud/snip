@@ -27,7 +27,7 @@
         </div>
     </div>
     <div class="col-md-9 col-md-offset-3">
-        {!! $errors->first('eol', '<span class="alert-msg"><br><i class="fa fa-times"></i> :message</span>') !!}
+        {!! $errors->first('eol', '<span class="alert-msg"><br><i class="fa fa-times"></i>پیام: </span>') !!}
     </div>
 </div>
 
@@ -36,7 +36,7 @@
     <label for="custom_fieldset" class="col-md-3 control-label">{{ trans('admin/models/general.fieldset') }}</label>
     <div class="col-md-7">
         {{ Form::select('custom_fieldset', \App\Helpers\Helper::customFieldsetList(),Input::old('custom_fieldset', $item->fieldset_id), array('class'=>'select2', 'style'=>'width:350px')) }}
-        {!! $errors->first('custom_fieldset', '<span class="alert-msg"><br><i class="fa fa-times"></i> :message</span>') !!}
+        {!! $errors->first('custom_fieldset', '<span class="alert-msg"><br><i class="fa fa-times"></i>پیام: </span>') !!}
     </div>
 </div>
 
@@ -50,7 +50,7 @@
     <div class="col-md-5">
         {{ Form::checkbox('image_delete') }}
         <img src="{{ config('app.url') }}/uploads/models/{{ $item->image }}" />
-        {!! $errors->first('image_delete', '<span class="alert-msg"><br>:message</span>') !!}
+        {!! $errors->first('image_delete', '<span class="alert-msg"><br>پیام: </span>') !!}
     </div>
 </div>
 @endif
@@ -59,7 +59,7 @@
     <label class="col-md-3 control-label" for="image">{{ trans('general.image_upload') }}</label>
     <div class="col-md-5">
         {{ Form::file('image') }}
-        {!! $errors->first('image', '<span class="alert-msg"><br>:message</span>') !!}
+        {!! $errors->first('image', '<span class="alert-msg"><br>پیام: </span>') !!}
     </div>
 </div>
 

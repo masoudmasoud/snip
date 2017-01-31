@@ -29,7 +29,7 @@
           <a class="btn btn-default pull-right" href="{{ URL::to('admin/users?status=deleted') }}" style="margin-right: 5px;">{{ trans('admin/users/table.show_deleted') }}</a>
         @endif
     @can('users.view')
-        <a class="btn btn-default pull-right" href="{{ URL::to('admin/users/export') }}" style="margin-right: 5px;">Export</a>
+        <a class="btn btn-default pull-right" href="{{ URL::to('admin/users/export') }}" style="margin-right: 5px;">خروجی</a>
     @endcan
 
 @stop
@@ -53,9 +53,9 @@
                 @can('users.delete')
                <div id="toolbar">
                  <select name="bulk_actions" class="form-control select2" style="width: 200px;">
-                     <option value="delete">Bulk Checkin &amp; Delete</option>
+                     <option value="delete">حذف دسته جمعی &amp; گرفتن</option>
                  </select>
-                 <button class="btn btn-default" id="bulkEdit" disabled>Go</button>
+                 <button class="btn btn-default" id="bulkEdit" disabled>برو</button>
              </div>
                 @endcan
             @endif
@@ -91,19 +91,19 @@
                          <th data-searchable="true" data-sortable="true" data-field="manager">{{ trans('admin/users/table.manager') }}</th>
                          <th data-sortable="true" data-field="location">{{ trans('admin/users/table.location') }}</th>
                          <th data-sortable="false" data-field="assets">
-                             <span class="hidden-md hidden-lg">Assets</span>
+                             <span class="hidden-md hidden-lg">دارایی ها</span>
                              <span class="hidden-xs"><i class="fa fa-barcode fa-lg"></i></span>
                          </th>
                          <th data-sortable="false" data-field="licenses">
-                             <span class="hidden-md hidden-lg">Licenses</span>
+                             <span class="hidden-md hidden-lg">گواهی نامه ها</span>
                              <span class="hidden-xs"><i class="fa fa-floppy-o fa-lg"></i></span>
                          </th>
                          <th data-sortable="false" data-field="accessories">
-                             <span class="hidden-md hidden-lg">Accessories</span>
+                             <span class="hidden-md hidden-lg">لوازم جانبی</span>
                              <span class="hidden-xs"><i class="fa fa-keyboard-o fa-lg"></i></span>
                          </th>
                          <th data-sortable="false" data-field="consumables">
-                             <span class="hidden-md hidden-lg">Consumables</span>
+                             <span class="hidden-md hidden-lg">مواد مصرفی</span>
                              <span class="hidden-xs"><i class="fa fa-tint fa-lg"></i></span>
                          </th>
                          <th data-sortable="false" data-field="groups">{{ trans('general.groups') }}</th>
@@ -120,9 +120,9 @@
                      <tr>
                          <td colspan="12">
                              <select name="bulk_actions" class="form-control">
-                                 <option value="delete">Bulk Delete</option>
+                                 <option value="delete">حذف گروهی</option>
                              </select>
-                             <button class="btn btn-default" id="bulkEdit" disabled>Go</button>
+                             <button class="btn btn-default" id="bulkEdit" disabled>برو</button>
                          </td>
                      </tr>
                  </tfoot> --}}

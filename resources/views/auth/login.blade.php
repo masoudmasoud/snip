@@ -32,11 +32,11 @@
                                     <fieldset>
                                         <div class="form-group{{ $errors->has('username') ? ' has-error' : '' }}">
                                             <input class="form-control" placeholder="{{ trans('admin/users/table.username')  }}" name="username" type="text" autofocus>
-                                            {!! $errors->first('username', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                                            {!! $errors->first('username', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                                         </div>
                                         <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
                                             <input class="form-control" placeholder="{{ trans('admin/users/table.password')  }}" name="password" type="password" autocomplete="off">
-                                            {!! $errors->first('password', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                                            {!! $errors->first('password', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                                         </div>
                                         <div class="checkbox">
                                             <label>

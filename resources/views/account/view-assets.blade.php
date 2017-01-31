@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-    View Assets for  {{ $user->fullName() }}
+    مشاهده دارایی های  {{ $user->fullName() }}
     @parent
 @stop
 
@@ -225,7 +225,7 @@
                 @if ($user->id)
                     <div class="box-header with-border">
                         <div class="box-heading">
-                            <h3 class="box-title"> History</h3>
+                            <h3 class="box-title">پیشینه</h3>
                         </div>
                     </div><!-- /.box-header -->
                 @endif

@@ -70,7 +70,7 @@
 
   <!-- side address column -->
   <div class="col-md-3">
-  <h4>More Info:</h4>
+  <h4>اطلاعات بیشتر: </h4>
     <ul class="list-unstyled">
 
       @if ($model->manufacturer)
@@ -115,7 +115,7 @@
     </ul>
 
     @if ($model->note)
-    Notesd:
+    یادداشت: 
     <p>{!! $model->getNote() !!}
     </p>
     @endif

@@ -56,7 +56,7 @@
 
                                 <div class="col-md-10">
                                     {{ Form::select('asset_id', $asset_list , Input::old('asset_id', $licenseseat->asset_id), array('class'=>'select2', 'style'=>'min-width:600px')) }}
-                                    {!! $errors->first('asset_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                                    {!! $errors->first('asset_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                                 </div>
                             </div>
 
@@ -68,7 +68,7 @@
 
                                 <div class="col-md-9">
                                     {{ Form::select('assigned_to', $users_list , Input::old('assigned_to', $licenseseat->assigned_to), array('class'=>'select2', 'style'=>'min-width:350px')) }}
-                                    {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                                    {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
 
                                     <p class="help-block">
                                     {{ trans('admin/licenses/form.checkout_help') }}
@@ -83,7 +83,7 @@
                                 <label for="note" class="col-md-2 control-label">{{ trans('admin/hardware/form.notes') }}</label>
                                 <div class="col-md-7">
                                     <textarea class="col-md-6 form-control" id="note" name="note">{{ Input::old('note', $licenseseat->note) }}</textarea>
-                                    {!! $errors->first('note', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                                    {!! $errors->first('note', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                                 </div>
                             </div>
                 </div>

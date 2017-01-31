@@ -38,11 +38,11 @@ LDAP User Sync
           <div class="col-md-6">
             {{ Form::select('location_id', $location_list , Input::old('location_id'), array('class'=>'select2', 'style'=>'width:350px')) }}
 
-              {!! $errors->first('location_id', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('location_id', '<span class="alert-msg">پیام : </span>') !!}
           </div>
           <div class="col-md-4">
             <button type="submit" class="btn btn-warning" id="sync">
-                <i id="sync-button-icon" class="fa fa-refresh icon-white"></i> <span id="sync-button-text">Synchronize</span>
+                <i id="sync-button-icon" class="fa fa-refresh icon-white"></i> <span id="sync-button-text">همگام ساختن</span>
             </button>
           </div>
 
@@ -65,15 +65,15 @@ LDAP User Sync
 
     <div class="box box-default">
       <div class="box-header with-border">
-        <h3 class="box-title">Synchronization Results</h3>
+        <h3 class="box-title">نتیجه همگام سازی</h3>
       </div><!-- /.box-header -->
       <div class="box-body">
 
         <table class="table table-bordered">
             <tr>
-                <th>Username</th><th>Employee Number</th>
-                <th>First Name</th><th>Last Name</th>
-                <th>Email</th><th>Notes</th>
+                <th>نام کاربری</th><th>شماره استخدام</th>
+                <th>نام</th><th>نام خانوادگی</th>
+                <th>ایمیل</th><th>یادداشت</th>
             </tr>
 
             @foreach (Session::get('summary') as $entry)

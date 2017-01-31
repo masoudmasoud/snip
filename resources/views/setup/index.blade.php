@@ -9,15 +9,17 @@ Create a User ::
 {{-- Page content --}}
 @section('content')
 
-    <p>This page will do a system check to make sure your configuration looks correct. We'll add your first user on the next page. </p>
+    <p>این صفحه یک بررسی سیستمی جهت صحت تنظیمات شما انجام می دهد. سیستم  اولین کاربر شما را در صفحه بعد اسجاد می کند.</p>
+	
+	
 
 
       <table class="table">
         <thead>
         <tr>
-          <th class="col-lg-2">Setting</th>
-          <th class="col-lg-1">Valid</th>
-          <th class="col-lg-9">Notes</th>
+          <th class="col-lg-2">تنظیمات</th>
+          <th class="col-lg-1">اعتبار</th>
+          <th class="col-lg-9">یادداشت ها</th>
         </tr>
       </thead>
       <tbody>
@@ -36,12 +38,12 @@ Create a User ::
               That URL looks right! Good job!
             @else
               Uh oh! Snipe-IT thinks your URL is {{ $start_settings['url_config'] }}, but your real URL is {{ $start_settings['real_url'] }}
-              Please update your <code>APP_URL</code> settings in your  <code>.env</code> file
+              لطفا تنظیمات <code>APP_URL</code> در فایل  <code>.env</code> را بروز رسانی کنید.
             @endif
           </td>
         </tr>
         <tr{!! ($start_settings['db_conn']===true) ? ' class="success"' : ' class="danger"' !!}>
-          <td>Database</td>
+          <td>پایگاه داده</td>
           <td>
             @if ($start_settings['db_conn']===true)
               <i class="fa fa-check preflight-success"></i>
@@ -51,9 +53,9 @@ Create a User ::
           </td>
           <td>
               @if ($start_settings['db_conn']===true)
-                Great work! Connected to <code>{{ $start_settings['db_name'] }}</code>
+                اتصال به پایگاه داده برقرار شد <code>{{ $start_settings['db_name'] }}</code>
               @else
-                D'oh! Looks like we can't connect to your database. Please update your database settings in your  <code>.env</code> file. Your database says: <code>{{ $start_settings['db_error'] }}</code>
+                اتصال برقرار نشد. لطفا تنظیمات پایگاه داده موجود در فایل  <code>.env</code> را بروز زسانی کنید. خطای پایگاه داده شما : <code>{{ $start_settings['db_error'] }}</code>
               @endif
           </td>
         </tr>

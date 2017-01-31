@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Change your Password
+تغییر رمز عبور
 @stop
 
 {{-- Account page content --}}
@@ -21,27 +21,27 @@ Change your Password
 
     <!-- Old Password -->
     <div class="form-group {{ $errors->has('old_password') ? ' has-error' : '' }}">
-        <label for="old_password" class="col-md-2 control-label">Old Password
+        <label for="old_password" class="col-md-2 control-label">رمز عبور قبلی
         <i class='fa fa-asterisk'></i>
         </label>
         <div class="col-md-5">
             <input class="form-control" type="password" name="old_password" id="old_password" {{ (config('app.lock_passwords') ? ' disabled' : '') }}>
-            {!! $errors->first('old_password', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+            {!! $errors->first('old_password', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
         </div>
     </div>
 
     <div class="form-group {{ $errors->has('password') ? ' has-error' : '' }}">
-        <label for="password" class="col-md-2 control-label">New Password
+        <label for="password" class="col-md-2 control-label">رمز عبور جدید
         <i class='fa fa-asterisk'></i></label>
         <div class="col-md-5">
             <input class="form-control" type="password" name="password" id="password" {{ (config('app.lock_passwords') ? ' disabled' : '') }}>
-            {!! $errors->first('password', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+            {!! $errors->first('password', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
         </div>
     </div>
 
 
     <div class="form-group {{ $errors->has('password_confirm') ? ' has-error' : '' }}">
-        <label for="password_confirm" class="col-md-2 control-label">New Password
+        <label for="password_confirm" class="col-md-2 control-label">رمز عبور جدید
         <i class='fa fa-asterisk'></i>
         </label>
         <div class="col-md-5">

@@ -67,7 +67,7 @@
                       {{ Form::text('site_name',
                           Input::old('site_name', $setting->site_name), array('class' => 'form-control','placeholder' => 'Snipe-IT Asset Management')) }}
                     @endif
-                    {!! $errors->first('site_name', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('site_name', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -85,7 +85,7 @@
                     <p class="help-block">{{ trans('general.feature_disabled') }}</p>
                     @endif
 
-                    {!! $errors->first('two_factor_enabled', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('two_factor_enabled', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -97,7 +97,7 @@
                   <div class="col-md-9">
                      {!! Form::locales('locale', Input::old('locale', $setting->locale), 'select2') !!}
 
-                    {!! $errors->first('locale', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('locale', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -110,7 +110,7 @@
                   <div class="col-md-9">
                     {{ Form::checkbox('full_multiple_companies_support', '1', Input::old('full_multiple_companies_support', $setting->full_multiple_companies_support),array('class' => 'minimal')) }}
                     {{ trans('admin/settings/general.full_multiple_companies_support_text') }}
-                    {!! $errors->first('full_multiple_companies_support', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('full_multiple_companies_support', '<span class="alert-msg">پیام: </span>') !!}
                     <p class="help-block">{{ trans('admin/settings/general.full_multiple_companies_support_help_text') }}</p>
                   </div>
                 </div>
@@ -125,7 +125,7 @@
                   <div class="col-md-9">
                     {{ Form::checkbox('require_accept_signature', '1', Input::old('require_accept_signature', $setting->require_accept_signature),array('class' => 'minimal')) }}
                     {{ trans('general.yes') }}
-                    {!! $errors->first('require_accept_signature', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('require_accept_signature', '<span class="alert-msg">پیام: </span>') !!}
                     <p class="help-block">{{ trans('admin/settings/general.require_accept_signature_help_text') }}</p>
                   </div>
                 </div>
@@ -141,7 +141,7 @@
                         <p class="help-block">{{ trans('general.lock_passwords') }}</p>
                     @else
                       {{ Form::file('logo_img') }}
-                      {!! $errors->first('logo', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('logo', '<span class="alert-msg">پیام: </span>') !!}
                       {{ Form::checkbox('clear_logo', '1', Input::old('clear_logo'),array('class' => 'minimal')) }} Remove
                     @endif
                   </div>
@@ -154,7 +154,7 @@
                   </div>
                   <div class="col-md-9">
                     {!! Form::select('brand', array('1'=>'Text','2'=>'Logo','3'=>'Logo + Text'), Input::old('brand', $setting->brand), array('class' => 'form-control', 'style'=>'width: 150px ;')) !!}
-                    {!! $errors->first('brand', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('brand', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -165,7 +165,7 @@
                   </div>
                   <div class="col-md-9">
                     {{ Form::text('default_currency', Input::old('default_currency', $setting->default_currency), array('class' => 'form-control','placeholder' => 'USD', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
-                    {!! $errors->first('default_currency', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('default_currency', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -178,7 +178,7 @@
                     {{ Form::text('email_domain', Input::old('email_domain', $setting->email_domain), array('class' => 'form-control','placeholder' => 'example.com')) }}
                     <span class="help-block">{{ trans('general.email_domain_help')  }}</span>
 
-                    {!! $errors->first('email_domain', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('email_domain', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -191,7 +191,7 @@
                   <div class="col-md-9">
                     {!! Form::username_format('email_format', Input::old('email_format', $setting->email_format), 'select2') !!}
 
-                    {!! $errors->first('email_format', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('email_format', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -218,7 +218,7 @@
                     'title' =>'Email addresses or distribution lists you want alerts to be sent to, comma separated.',
                     'data-toggle' =>'tooltip',
                     'data-placement'=>'top')) }}
-                    {!! $errors->first('alert_email', '<span class="alert-msg">:message</span><br>') !!}
+                    {!! $errors->first('alert_email', '<span class="alert-msg">پیام: </span><br>') !!}
 
                     {{ Form::checkbox('alerts_enabled', '1', Input::old('alerts_enabled', $setting->alerts_enabled),array('class' => 'minimal')) }}
                     {{ trans('admin/settings/general.alerts_enabled') }}
@@ -233,7 +233,7 @@
                   </div>
                   <div class="col-md-9">
                     {{ Form::text('alert_interval', Input::old('alert_interval', $setting->alert_interval), array('class' => 'form-control','placeholder' => '30', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
-                    {!! $errors->first('alert_interval', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('alert_interval', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -244,7 +244,7 @@
                   </div>
                   <div class="col-md-9">
                     {{ Form::text('alert_threshold', Input::old('alert_threshold', $setting->alert_threshold), array('class' => 'form-control','placeholder' => '5', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
-                    {!! $errors->first('alert_threshold', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('alert_threshold', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -265,7 +265,7 @@
                       </div><!-- /.input group -->
 
 
-                    {!! $errors->first('header_color', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('header_color', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -277,11 +277,11 @@
                   <div class="col-md-9">
                     @if (config('app.lock_passwords')===true)
                       {{ Form::textarea('custom_css', Input::old('custom_css', $setting->custom_css), array('class' => 'form-control','placeholder' => 'Add your custom CSS','disabled'=>'disabled')) }}
-                      {!! $errors->first('custom_css', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('custom_css', '<span class="alert-msg">پیام: </span>') !!}
                       <p class="help-block">{{ trans('general.lock_passwords') }}</p>
                     @else
                       {{ Form::textarea('custom_css', Input::old('custom_css', $setting->custom_css), array('class' => 'form-control','placeholder' => 'Add your custom CSS')) }}
-                      {!! $errors->first('custom_css', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('custom_css', '<span class="alert-msg">پیام: </span>') !!}
                     @endif
                    <p class="help-block">{{ trans('admin/settings/general.custom_css_help') }}</p>
                   </div>
@@ -305,7 +305,7 @@
                   </div>
                   <div class="col-md-9">
                     {{ Form::text('per_page', Input::old('per_page', $setting->per_page), array('class' => 'form-control','placeholder' => '5', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
-                    {!! $errors->first('per_page', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('per_page', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>
 
@@ -343,7 +343,7 @@
                   <div class="col-md-9">
                     @if ($setting->auto_increment_assets == 1)
                     {{ Form::text('auto_increment_prefix', Input::old('auto_increment_prefix', $setting->auto_increment_prefix), array('class' => 'form-control', 'style'=>'width: 100px;')) }}
-                    {!! $errors->first('auto_increment_prefix', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('auto_increment_prefix', '<span class="alert-msg">پیام: </span>') !!}
                     @else
                     {{ Form::text('auto_increment_prefix', Input::old('auto_increment_prefix', $setting->auto_increment_prefix), array('class' => 'form-control', 'disabled'=>'disabled', 'style'=>'width: 100px;')) }}
                     @endif
@@ -357,7 +357,7 @@
                   </div>
                   <div class="col-md-9">
                       {{ Form::text('zerofill_count', Input::old('zerofill_count', $setting->zerofill_count), array('class' => 'form-control', 'style'=>'width: 100px;')) }}
-                      {!! $errors->first('zerofill_count', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('zerofill_count', '<span class="alert-msg">پیام: </span>') !!}
 
                   </div>
                 </div>
@@ -398,7 +398,7 @@
                     </div>
                     <div class="col-md-9">
                       {!! Form::barcode_types('barcode_type', Input::old('barcode_type', $setting->barcode_type), 'select2') !!}
-                      {!! $errors->first('barcode_type', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                      {!! $errors->first('barcode_type', '<span class="alert-msg"><i class="fa fa-times"></i> پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -420,7 +420,7 @@
                       </div>
                       <div class="col-md-9">
                         {!! Form::alt_barcode_types('alt_barcode', Input::old('alt_barcode', $setting->alt_barcode), 'select2') !!}
-                        {!! $errors->first('barcode_type', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                        {!! $errors->first('barcode_type', '<span class="alert-msg"><i class="fa fa-times"></i> پیام: </span>') !!}
                       </div>
                     </div>
 
@@ -442,7 +442,7 @@
                   <h4 class="box-title">
                     <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" class="accordion-header">
                     <i class="fa fa-table"></i>
-                    Labels
+                    برچسب 
 
                     </a>
                   </h4>
@@ -464,7 +464,7 @@
                     'title' =>'Extra text that you would like to display on your labels. ',
                     'data-toggle' =>'tooltip',
                     'data-placement'=>'top')) }}
-                    {!! $errors->first('qr_text', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('qr_text', '<span class="alert-msg">پیام: </span>') !!}
                   @else
                     {{ Form::text('qr_text', Input::old('qr_text', $setting->qr_text), array('class' => 'form-control', 'disabled'=>'disabled','placeholder' => 'Property of Your Company')) }}
                     <p class="help-block">{{ trans('admin/settings/general.qr_help') }}</p>
@@ -478,7 +478,7 @@
                     </div>
                     <div class="col-md-9">
                       {{ Form::text('labels_per_page', Input::old('labels_per_page', $setting->labels_per_page), array('class' => 'form-control','style' => 'width: 100px;')) }}
-                      {!! $errors->first('labels_per_page', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('labels_per_page', '<span class="alert-msg">پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -493,7 +493,7 @@
                       </div>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                      {!! $errors->first('labels_fontsize', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('labels_fontsize', '<span class="alert-msg">پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -516,8 +516,8 @@
                       </div>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                      {!! $errors->first('labels_width', '<span class="alert-msg">:message</span>') !!}
-                      {!! $errors->first('labels_height', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('labels_width', '<span class="alert-msg">پیام: </span>') !!}
+                      {!! $errors->first('labels_height', '<span class="alert-msg">پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -539,8 +539,8 @@
                       </div>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                      {!! $errors->first('labels_display_sgutter', '<span class="alert-msg">:message</span>') !!}
-                      {!! $errors->first('labels_display_bgutter', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('labels_display_sgutter', '<span class="alert-msg">پیام: </span>') !!}
+                      {!! $errors->first('labels_display_bgutter', '<span class="alert-msg">پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -573,8 +573,8 @@
                       </div>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                      {!! $errors->first('labels_width', '<span class="alert-msg">:message</span>') !!}
-                      {!! $errors->first('labels_height', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('labels_width', '<span class="alert-msg">پیام: </span>') !!}
+                      {!! $errors->first('labels_height', '<span class="alert-msg">پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -595,8 +595,8 @@
                       </div>
                     </div>
                     <div class="col-md-9 col-md-offset-3">
-                      {!! $errors->first('labels_pagewidth', '<span class="alert-msg">:message</span>') !!}
-                      {!! $errors->first('labels_pageheight', '<span class="alert-msg">:message</span>') !!}
+                      {!! $errors->first('labels_pagewidth', '<span class="alert-msg">پیام: </span>') !!}
+                      {!! $errors->first('labels_pageheight', '<span class="alert-msg">پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -730,7 +730,7 @@
                 <div class="col-md-9">
                   {{ Form::checkbox('ldap_enabled', '1', Input::old('ldap_enabled', $setting->ldap_enabled),array('class' => 'minimal')) }}
                   {{ trans('admin/settings/general.ldap_enabled') }}
-                  {!! $errors->first('ldap_enabled', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('ldap_enabled', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
               </div>
 
@@ -743,7 +743,7 @@
                 <div class="col-md-9">
                   {{ Form::checkbox('is_ad', '1', Input::old('is_ad', $setting->is_ad),array('class' => 'minimal')) }}
                   {{ trans('admin/settings/general.is_ad') }}
-                  {!! $errors->first('is_ad', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('is_ad', '<span class="alert-msg">پیام: </span>') !!}
 
                 </div>
               </div>
@@ -758,7 +758,7 @@
                   {{ Form::checkbox('ldap_pw_sync', '1', Input::old('ldap_pw_sync', $setting->ldap_pw_sync),array('class' => 'minimal')) }}
                   {{ trans('general.yes') }}
                   <p class="help-block">{{ trans('admin/settings/general.ldap_pw_sync_help') }}</p>
-                  {!! $errors->first('ldap_pw_sync', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('ldap_pw_sync', '<span class="alert-msg">پیام: </span>') !!}
 
                 </div>
               </div>
@@ -779,7 +779,7 @@
                     <p class="help-block">{{ trans('admin/settings/general.ad_domain_help') }}</p>
 
 
-                    {!! $errors->first('ad_domain', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ad_domain', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
               </div><!-- LDAP Server -->
 
@@ -809,7 +809,7 @@
                     <div class="col-md-9">
                         {{ Form::checkbox('ldap_tls', '1', Input::old('ldap_tls', $setting->ldap_tls),array('class' => 'minimal')) }}
                         {{ trans('admin/settings/general.ldap_tls_help') }}
-                        {!! $errors->first('ldap_tls', '<span class="alert-msg">:message</span>') !!}
+                        {!! $errors->first('ldap_tls', '<span class="alert-msg">پیام: </span>') !!}
 
                     </div>
                 </div>
@@ -840,7 +840,7 @@
                       {{ Form::text('ldap_uname', Input::old('ldap_uname', $setting->ldap_uname), array('class' => 'form-control','placeholder' => 'binduser@example.com')) }}
                     @endif
 
-                    {!! $errors->first('ldap_uname', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_uname', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -857,7 +857,7 @@
                       {{ Form::password('ldap_pword', array('class' => 'form-control','placeholder' => 'binduserpassword')) }}
                     @endif
 
-                    {!! $errors->first('ldap_pword', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_pword', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -874,7 +874,7 @@
                       {{ Form::text('ldap_basedn', Input::old('ldap_basedn', $setting->ldap_basedn), array('class' => 'form-control','placeholder' => 'cn=users/authorized,dc=example,dc=com')) }}
                     @endif
 
-                    {!! $errors->first('ldap_basedn', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_basedn', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -890,7 +890,7 @@
                       {{ Form::text('ldap_filter', Input::old('ldap_filter', $setting->ldap_filter), array('class' => 'form-control','placeholder' => '&(cn=*)')) }}
                     @endif
 
-                    {!! $errors->first('ldap_filter', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_filter', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -907,7 +907,7 @@
                       {{ Form::text('ldap_username_field', Input::old('ldap_username_field', $setting->ldap_username_field), array('class' => 'form-control','placeholder' => 'samaccountname')) }}
                     @endif
 
-                    {!! $errors->first('ldap_username_field', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_username_field', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -924,7 +924,7 @@
                       {{ Form::text('ldap_lname_field', Input::old('ldap_lname_field', $setting->ldap_lname_field), array('class' => 'form-control','placeholder' => 'sn')) }}
                     @endif
 
-                    {!! $errors->first('ldap_lname_field', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_lname_field', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -941,7 +941,7 @@
                       {{ Form::text('ldap_fname_field', Input::old('ldap_fname_field', $setting->ldap_fname_field), array('class' => 'form-control','placeholder' => 'givenname')) }}
                     @endif
 
-                    {!! $errors->first('ldap_fname_field', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_fname_field', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -957,7 +957,7 @@
                       {{ Form::text('ldap_auth_filter_query', Input::old('ldap_auth_filter_query', $setting->ldap_auth_filter_query), array('class' => 'form-control','placeholder' => '"uid="')) }}
                     @endif
 
-                    {!! $errors->first('ldap_auth_filter_query', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_auth_filter_query', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -973,7 +973,7 @@
                       {{ Form::text('ldap_version', Input::old('ldap_version', $setting->ldap_version), array('class' => 'form-control','placeholder' => '3')) }}
                     @endif
 
-                    {!! $errors->first('ldap_version', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_version', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -989,7 +989,7 @@
                       {{ Form::text('ldap_active_flag', Input::old('ldap_active_flag', $setting->ldap_active_flag), array('class' => 'form-control','placeholder' => '')) }}
                     @endif
 
-                    {!! $errors->first('ldap_active_flag', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_active_flag', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -1005,7 +1005,7 @@
                       {{ Form::text('ldap_emp_num', Input::old('ldap_emp_num', $setting->ldap_emp_num), array('class' => 'form-control','placeholder' => '')) }}
                     @endif
 
-                    {!! $errors->first('ldap_emp_num', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_emp_num', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
 
@@ -1021,7 +1021,7 @@
                       {{ Form::text('ldap_email', Input::old('ldap_email', $setting->ldap_email), array('class' => 'form-control','placeholder' => '')) }}
                     @endif
 
-                    {!! $errors->first('ldap_email', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('ldap_email', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
               </div>
             </div>

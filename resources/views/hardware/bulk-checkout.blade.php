@@ -40,10 +40,10 @@
                         <div class="col-md-7 required">
                             {{ Form::select('assigned_to', $users_list , Input::old('assigned_to'), array('class'=>'select2', 'id'=>'assigned_to', 'style'=>'width:100%')) }}
 
-                            {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                            {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                         </div>
                         <div class="col-md-1 col-sm-1 text-left">
-                            <a href='#' data-toggle="modal"  data-target="#createModal" data-dependency="user" data-select='assigned_to' class="btn btn-sm btn-default">New</a>
+                            <a href='#' data-toggle="modal"  data-target="#createModal" data-dependency="user" data-select='assigned_to' class="btn btn-sm btn-default">جدید</a>
                         </div>
                     </div>
 
@@ -57,7 +57,7 @@
                       <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" name="checkout_at" id="checkout_at" value="{{ Input::old('checkout_at', date('Y-m-d')) }}">
                       <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
-                      {!! $errors->first('checkout_at', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                      {!! $errors->first('checkout_at', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -71,7 +71,7 @@
                       <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" name="expected_checkin" id="expected_checkin" value="{{ Input::old('expected_checkin') }}">
                       <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
-                      {!! $errors->first('expected_checkin', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                      {!! $errors->first('expected_checkin', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -83,7 +83,7 @@
 
                     <div class="col-md-8">
                       <textarea class="col-md-6 form-control" id="note" name="note">{{ Input::old('note') }}</textarea>
-                      {!! $errors->first('note', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                      {!! $errors->first('note', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                     </div>
                   </div>
 
@@ -94,7 +94,7 @@
                         <div class="col-md-8 required">
                             {{ Form::select('selected_assets[]', $assets_list , Input::old('selected_asset'), array('class'=>'select2', 'id'=>'selected_asset', 'style'=>'width:100%', 'multiple'=>'multiple')) }}
 
-                            {!! $errors->first('selected_asset', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                            {!! $errors->first('selected_asset', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                         </div>
                     </div>
 
@@ -134,7 +134,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Modal title</h4>
+                    <h4 class="modal-title">عنوان صفحه</h4>
                 </div>
                 <div class="modal-body">
 

@@ -26,7 +26,7 @@
     <label for="statuslabel_types" class="col-md-3 control-label">{{ trans('admin/statuslabels/table.status_type') }} </label>
     <div class="col-md-7 required">
         {{ Form::select('statuslabel_types', $statuslabel_types, $item->getStatuslabelType(), array('class'=>'select2', 'style'=>'min-width:400px')) }}
-        {!! $errors->first('statuslabel_types', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+        {!! $errors->first('statuslabel_types', '<span class="alert-msg"><i class="fa fa-times"></i>پیام : </span>') !!}
     </div>
 </div>
 
@@ -38,7 +38,7 @@
             {{ Form::text('color', Input::old('color', $item->color), array('class' => 'form-control', 'style' => 'width: 100px;', 'maxlength'=>'10')) }}
             <div class="input-group-addon"><i></i></div>
         </div><!-- /.input group -->
-        {!! $errors->first('header_color', '<span class="alert-msg">:message</span>') !!}
+        {!! $errors->first('header_color', '<span class="alert-msg">پیام: </span>') !!}
     </div>
 </div>
 

@@ -22,12 +22,12 @@
             <table class="table table-striped">
                 <thead>
                     <tr role="row">
-                        <th class="col-md-1">Item Type</th>
-                        <th class="col-md-1">Item Name</th>
+                        <th class="col-md-1">نوع</th>
+                        <th class="col-md-1">نام</th>
                         <th class="col-md-1" bSortable="true">{{ trans('admin/hardware/table.location') }}</th>
                         <th class="col-md-1" bSortable="true">{{ trans('admin/hardware/form.expected_checkin') }}</th>
-                        <th class="col-md-1" bSortable="true">Requesting User</th>
-                        <th class="col-md-1">Requested Date</th>
+                        <th class="col-md-1" bSortable="true">کاربر درخواست کننده</th>
+                        <th class="col-md-1">تاریخ درخواست</th>
                         <th class="col-md-1 actions" bSortable="false">{{ trans('table.actions') }}</th>
                     </tr>
                 </thead>

@@ -27,7 +27,7 @@
     <div class="box box-default">
 
       <div class="box-header with-border">
-        <h3 class="box-title">Customize Report</h3>
+        <h3 class="box-title">سفارشی سازی گزارش</h3>
       </div><!-- /.box-header -->
 
 
@@ -175,7 +175,7 @@
 
 
       <div class="col-md-7">
-        <p>Select the fields you'd like to include in your custom report, and click Generate. The file (YYYY-mm-dd-his-custom-asset-report.csv) will download automatically, and you can open it in Excel.</p>
+        <p>قسمت هایی که در گزراش سفارشی می خواهید را انتخاب کنید و روی دکمه تولید کلیک کنید. فایل گزارش به صورت خودکار برای شما دانلود شده و می توانید از اکسل برای مشاهده آن استفاده کنید.</p>
       </div>
 
         </div>

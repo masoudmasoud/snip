@@ -8,14 +8,19 @@
 
 {{-- Page content --}}
 @section('content')
+<?php 
 
+include_once($_SERVER['DOCUMENT_ROOT'].'/snipe/resources/convertdate.php');
+
+
+ ?>	
 <div class="row">
     <div class="col-md-12">
 
 
       <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
-          <li class="active"><a href="#info_tab" data-toggle="tab"><span class="hidden-lg hidden-md"><i class="fa fa-info-circle"></i></span> <span class="hidden-xs hidden-sm">Info</span></a></li>
+          <li class="active"><a href="#info_tab" data-toggle="tab"><span class="hidden-lg hidden-md"><i class="fa fa-info-circle"></i></span> <span class="hidden-xs hidden-sm">اطلاعات</span></a></li>
           <li><a href="#asset_tab" data-toggle="tab"><span class="hidden-lg hidden-md"><i class="fa fa-barcode"></i></span> <span class="hidden-xs hidden-sm">{{ trans('general.assets') }}</span></a></li>
           <li><a href="#licenses_tab" data-toggle="tab"><span class="hidden-lg hidden-md"><i class="fa fa-floppy-o"></i></span> <span class="hidden-xs hidden-sm">{{ trans('general.licenses') }}</span></a></li>
           <li><a href="#accessories_tab" data-toggle="tab"><span class="hidden-lg hidden-md"><i class="fa fa-keyboard-o"></i></span> <span class="hidden-xs hidden-sm">{{ trans('general.accessories') }}</span></a></li>
@@ -47,9 +52,9 @@
                     <div class="col-md-12">
                     <div class="callout callout-warning">
                         <i class="icon fa fa-warning"></i>
-                        This user has been marked as deleted.
+                        این کاربر برای حذف انتخاب شده است.
                         @can('users.edit')
-                            <a href="{{ route('restore/user', $user->id) }}">Click here</a> to restore them.
+                            <a href="{{ route('restore/user', $user->id) }}">کلیک کنید</a> برای بازگردانی.
                         @endcan
                       </div>
                   </div>
@@ -67,53 +72,53 @@
                   <table class="table table-striped">
                     @if (!is_null($user->company))
                       <tr>
-                          <td>Company</td>
+                          <td>شرکت</td>
                           <td>{{ $user->company->name }}</td>
                       </tr>
                     @endif
 
                     <tr>
-                        <td>Name</td>
+                        <td>نام</td>
                         <td>{{ $user->fullName() }}</td>
                     </tr>
                     @if ($user->jobtitle)
                     <tr>
-                        <td>Title</td>
+                        <td>عنوان</td>
                         <td>{{ $user->jobtitle }}</td>
                     </tr>
                     @endif
 
                     @if ($user->employee_num)
                     <tr>
-                        <td>Employee No.</td>
+                        <td>شماره استخدام</td>
                         <td>{{ $user->employee_num }}</td>
                     </tr>
                     @endif
 
                     @if ($user->manager)
                     <tr>
-                        <td>Manager</td>
+                        <td>مدیر</td>
                         <td><a href="{{ route('view/user', $user->manager->id) }}">{{ $user->manager->fullName() }}</a></td>
                     </tr>
                     @endif
 
                     @if ($user->email)
                     <tr>
-                        <td>Email</td>
+                        <td>ایمیل</td>
                         <td><a href="mailto:{{ $user->email }}">{{ $user->email }}</a></td>
                     </tr>
                     @endif
 
                     @if ($user->phone)
                     <tr>
-                        <td>Phone</td>
+                        <td>شماره تماس</td>
                         <td>{{ $user->phone }}</td>
                     </tr>
                     @endif
 
                     @if ($user->userloc)
                     <tr>
-                        <td>Location</td>
+                        <td>مکان</td>
                         <td>{{ $user->userloc->name }}</td>
                     </tr>
                     @endif
@@ -121,7 +126,7 @@
                         <tr>
                             <td>{{ trans('general.created_at') }}</td>
                             <td>
-                                {{ $user->created_at->format('F j, Y h:iA') }}
+                                {{ cnv($user->created_at) }}
                             </td>
                         </tr>
                     @endif
@@ -243,8 +248,8 @@
               <table class="display table table-hover">
                 <thead>
                     <tr>
-                        <th class="col-md-5">Name</th>
-                        <th class="col-md-1 hidden-print">Actions</th>
+                        <th class="col-md-5">نام</th>
+                        <th class="col-md-1 hidden-print">فعالیت</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -310,7 +315,7 @@
                 <div class="col-md-11">
                     <div id="progress" class="progress progress-striped active" style="margin-top: 8px;">
                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                            <span id="progress-bar-text">0% Complete</span>
+                            <span id="progress-bar-text">0% تکمیل شد</span>
                         </div>
                     </div>
                 </div>

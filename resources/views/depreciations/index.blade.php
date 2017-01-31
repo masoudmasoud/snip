@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-Asset Depreciations
+استهلاک دارایی
 @parent
 @stop
 

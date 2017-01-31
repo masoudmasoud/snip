@@ -5,13 +5,13 @@
 <div class="pagination">
     <ul class="pull left">
         <li>
-        Showing
+        نمایش
         <?php echo $paginator->getFrom(); ?>
         -
         <?php echo $paginator->getTo(); ?>
-        of
+        از
         <?php echo $paginator->getTotal(); ?>
-        items
+        مورد
         </li>
     </ul>
 

@@ -22,7 +22,7 @@
             </label>
             <div class="col-md-5 required">
                 <input class="form-control" type="text" name="first_name" id="first_name" value="{{ Input::old('first_name', $user->first_name) }}" />
-                {!! $errors->first('first_name', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('first_name', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -33,7 +33,7 @@
             </label>
             <div class="col-md-5 required">
                 <input class="form-control" type="text" name="last_name" id="last_name" value="{{ Input::old('last_name', $user->last_name) }}" />
-                {!! $errors->first('last_name', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('last_name', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -44,7 +44,7 @@
                 <div class="col-md-5">
                     <div class="field-box">
                     {{ Form::select('location_id', $location_list , Input::old('location_id', $user->location_id), array('class'=>'select2', 'style'=>'width:300px')) }}
-                    {!! $errors->first('location_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                    {!! $errors->first('location_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@
               <label class="col-md-3 control-label" for="locale">{{ trans('general.language') }}</label>
               <div class="col-md-9">
                   {!! Form::locales('locale', Input::old('locale', $user->locale), 'select2') !!}
-                  {!! $errors->first('locale', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('locale', '<span class="alert-msg">پیام: </span>') !!}
               </div>
           </div>
 
@@ -64,7 +64,7 @@
             <label for="website" class="col-md-3 control-label">{{ trans('general.website') }}</label>
             <div class="col-md-5">
                 <input class="form-control" type="text" name="website" id="website" value="{{ Input::old('website', $user->website) }}" />
-                {!! $errors->first('website', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('website', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -74,7 +74,7 @@
              <small> - شخصی </small></label>
             <div class="col-md-5">
                 <input class="form-control" type="text" name="gravatar" id="gravatar" value="{{ Input::old('gravatar', $user->gravatar) }}" />
-                {!! $errors->first('gravatar', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('gravatar', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                 <!-- <p><img src="" width="30" height="30" />
                 <a href=""><small>Change your avatar at Gravatar.com</small></a>.
             </p> -->
@@ -88,7 +88,7 @@
                 <div class="col-md-5">
                     {{ Form::checkbox('avatar_delete') }}
                     <img src="{{ config('app.url') }}/uploads/avatars/{{ $user->avatar }}" class="avatar img-circle">
-                    {!! $errors->first('avatar_delete', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('avatar_delete', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
             </div>
         @endif

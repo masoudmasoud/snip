@@ -44,7 +44,7 @@
             <div class="input-group col-md-3">
                 <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="purchase_date" id="purchase_date" value="{{ Input::old('purchase_date') }}">
                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-            {!! $errors->first('purchase_date', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+            {!! $errors->first('purchase_date', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -55,7 +55,7 @@
             </label>
                 <div class="col-md-7">
                     {{ Form::select('status_id', $statuslabel_list , Input::old('status_id'), array('class'=>'select2', 'style'=>'width:350px')) }}
-                    {!! $errors->first('status_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                    {!! $errors->first('status_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                 </div>
         </div>
 
@@ -66,7 +66,7 @@
             </label>
                 <div class="col-md-7">
                     {{ Form::select('model_id', $models_list , Input::old('model_id'), array('class'=>'select2', 'style'=>'width:350px')) }}
-                    {!! $errors->first('model_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                    {!! $errors->first('model_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                 </div>
         </div>
 
@@ -76,7 +76,7 @@
             <label for="status_id" class="col-md-2 control-label">{{ trans('admin/hardware/form.default_location') }}</label>
                 <div class="col-md-7">
                     {{ Form::select('rtd_location_id', $location_list , Input::old('rtd_location_id'), array('class'=>'select2', 'style'=>'width:350px')) }}
-                    {!! $errors->first('status_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                    {!! $errors->first('status_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                 </div>
         </div>
 
@@ -89,7 +89,7 @@
               <span class="input-group-addon">{{ $snipeSettings->default_currency }}</span>
                 <input type="text" class="form-control" placeholder="{{ trans('admin/hardware/form.cost') }}" name="purchase_cost" id="purchase_cost" value="{{ Input::old('purchase_cost') }}">
 
-            {!! $errors->first('purchase_cost', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+            {!! $errors->first('purchase_cost', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -98,7 +98,7 @@
             <label for="supplier_id" class="col-md-2 control-label">{{ trans('admin/hardware/form.supplier') }}</label>
             <div class="col-md-7">
                 {{ Form::select('supplier_id', $supplier_list , Input::old('supplier_id'), array('class'=>'select2', 'style'=>'min-width:350px')) }}
-                {!! $errors->first('supplier_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('supplier_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -109,7 +109,7 @@
             </label>
                 <div class="col-md-7">
                     {{ Form::select('company_id', $companies_list , Input::old('company_id'), array('class'=>'select2', 'style'=>'width:350px')) }}
-                    {!! $errors->first('company_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                    {!! $errors->first('company_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                 </div>
         </div>
 
@@ -118,7 +118,7 @@
             <label for="order_number" class="col-md-2 control-label">{{ trans('admin/hardware/form.order') }}</label>
             <div class="col-md-7">
                 <input class="form-control" type="text" name="order_number" id="order_number" value="{{ Input::old('order_number') }}" />
-                {!! $errors->first('order_number', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('order_number', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
         </div>
 
@@ -128,7 +128,7 @@
             <div class="col-md-2">
                 <div class="input-group">
                 <input class="col-md-2 form-control" type="text" name="warranty_months" id="warranty_months" value="{{ Input::old('warranty_months') }}" />   <span class="input-group-addon">{{ trans('admin/hardware/form.months') }}</span>
-                {!! $errors->first('warranty_months', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('warranty_months', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                 </div>
             </div>
         </div>
@@ -139,13 +139,13 @@
             <label for="requestable" class="col-md-2 control-label">{{ trans('admin/hardware/form.requestable') }}</label>
             <div class="col-md-10">
                 <label class="radio">
-                  <input type="radio" name="requestable" value="1"> Yes
+                  <input type="radio" name="requestable" value="1"> بله
                 </label>
                 <label class="radio">
-                  <input type="radio" name="requestable" value="0"> No
+                  <input type="radio" name="requestable" value="0"> خیر
                 </label>
                 <label class="radio">
-                  <input type="radio" name="requestable" value=""> Do Not Change
+                  <input type="radio" name="requestable" value=""> تغییر نده
                 </label>
             </div>
         </div>

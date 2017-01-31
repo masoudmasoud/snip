@@ -111,7 +111,7 @@
     'name'					=> 'Name',
     'next'					=> 'Next',
     'new'					=> 'new!',
-    'no_depreciation'		=> 'No Depreciation',
+    'no_depreciation'		=> 'استهلاکی یافت نشد',
     'no_results'			=> 'No Results.',
     'no'  					=> 'No',
     'notes'  				=> 'Notes',

@@ -2,7 +2,7 @@
 
 {{-- Page title --}}
 @section('title')
-  Manage {{ trans('admin/custom_fields/general.custom_fields') }}
+  مدیریت {{ trans('admin/custom_fields/general.custom_fields') }}
 @parent
 @stop
 

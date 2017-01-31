@@ -1758,11 +1758,11 @@ class AssetsController extends Controller
             if ($asset->deleted_at=='') {
                 if (Gate::allows('assets.create')) {
                     $actions .= '<a href="' . route('clone/hardware',
-                            $asset->id) . '" class="btn btn-info btn-sm" title="Clone asset" data-toggle="tooltip"><i class="fa fa-clone"></i></a> ';
+                            $asset->id) . '" class="btn btn-info btn-sm" title="کپی کردن دارایی" data-toggle="tooltip"><i class="fa fa-clone"></i></a> ';
                 }
                 if (Gate::allows('assets.edit')) {
                     $actions .= '<a href="' . route('update/hardware',
-                            $asset->id) . '" class="btn btn-warning btn-sm" title="Edit asset" data-toggle="tooltip"><i class="fa fa-pencil icon-white"></i></a> ';
+                            $asset->id) . '" class="btn btn-warning btn-sm" title="ویرایش دارایی" data-toggle="tooltip"><i class="fa fa-pencil icon-white"></i></a> ';
                 }
                 if (Gate::allows('assets.delete')) {
                     $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/hardware',

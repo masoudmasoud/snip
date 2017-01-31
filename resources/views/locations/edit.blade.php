@@ -16,7 +16,7 @@
     </label>
     <div class="col-md-9{{  (\App\Helpers\Helper::checkIfRequired($item, 'parent_id')) ? ' required' : '' }}">
         {!! Form::select('parent_id', $location_options , Input::old('parent_id', $item->parent_id), array('class'=>'select2 parent', 'style'=>'width:350px')) !!}
-        {!! $errors->first('parent_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+        {!! $errors->first('parent_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
     </div>
 </div>
 
@@ -27,7 +27,7 @@
     </label>
     <div class="col-md-9{{  (\App\Helpers\Helper::checkIfRequired($item, 'currency')) ? ' required' : '' }}">
         {{ Form::text('currency', Input::old('currency', $item->currency), array('class' => 'form-control','placeholder' => 'USD', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
-        {!! $errors->first('currency', '<span class="alert-msg">:message</span>') !!}
+        {!! $errors->first('currency', '<span class="alert-msg">پیام: </span>') !!}
     </div>
 </div>
 

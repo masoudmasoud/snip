@@ -2,14 +2,14 @@
 
 {{-- Page title --}}
 @section('title')
-Create a User ::
+ایجاد کاربر:
 @parent
 @stop
 
 {{-- Page content --}}
 @section('content')
 
-  <p> This is the account information you'll use to access the site for the first time. All fields are required. </p>
+  <p>این اطلاعات کاربری شماست، برای دسترسی به سیستم از آن استفاده خواهید کرد. همه ی قسمت ها الزامیست.</p>
 
           <form action="{{ route('setup.user.save') }}" method="POST">
             {!! csrf_field() !!}
@@ -34,14 +34,14 @@ Create a User ::
                   {{ Form::text('email_domain', Input::old('email_domain'), array('class' => 'form-control','placeholder' => 'example.com')) }}
                   <span class="help-block">{{ trans('general.email_domain_help')  }}</span>
 
-                  {!! $errors->first('email_domain', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('email_domain', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
 
                 <!-- email format  -->
                 <div class="form-group col-lg-6 {{ $errors->has('email_format') ? 'error' : '' }}">
                   {{ Form::label('email_format', trans('general.email_format')) }}
                   {!! Form::username_format('email_format', Input::old('email_format', 'filastname'), 'select2') !!}
-                  {!! $errors->first('email_format', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('email_format', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
               </div>
 
@@ -51,16 +51,16 @@ Create a User ::
               <div class="row">
                 <div class="form-group col-lg-6 {{ $errors->has('first_name') ? 'error' : '' }}">
                     {{ Form::label('first_name', trans('general.first_name')) }}
-                    {{ Form::text('first_name', Input::old('first_name'), array('class' => 'form-control','placeholder' => 'Jane')) }}
+                    {{ Form::text('first_name', Input::old('first_name'), array('class' => 'form-control','placeholder' => 'ALI')) }}
 
-                    {!! $errors->first('first_name', '<span class="alert-msg">:message</span>') !!}
+                    {!! $errors->first('first_name', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
 
                 <!-- last name -->
                 <div class="form-group col-lg-6 {{ $errors->has('last_name') ? 'error' : '' }}">
                   {{ Form::label('last_name', trans('general.last_name')) }}
-                  {{ Form::text('last_name', Input::old('last_name'), array('class' => 'form-control','placeholder' => 'Smith')) }}
-                  {!! $errors->first('last_name', '<span class="alert-msg">:message</span>') !!}
+                  {{ Form::text('last_name', Input::old('last_name'), array('class' => 'form-control','placeholder' => 'AHMADI')) }}
+                  {!! $errors->first('last_name', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
               </div>
 
@@ -69,14 +69,14 @@ Create a User ::
                 <div class="form-group col-lg-6 {{ $errors->has('email') ? 'error' : '' }}">
                   {{ Form::label('email', trans('admin/users/table.email')) }}
                   {{ Form::email('email', config('mail.from.address'), array('class' => 'form-control','placeholder' => 'you@example.com')) }}
-                  {!! $errors->first('email', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('email', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
 
                 <!-- username -->
                 <div class="form-group col-lg-6 {{ $errors->has('username') ? 'error' : '' }}">
                   {{ Form::label('username', trans('admin/users/table.username')) }}
                   {{ Form::text('username', Input::old('username'), array('class' => 'form-control','placeholder' => 'jsmith')) }}
-                  {!! $errors->first('username', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('username', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
               </div>
 
@@ -85,23 +85,23 @@ Create a User ::
                 <div class="form-group col-lg-6 {{ $errors->has('password') ? 'error' : '' }}">
                   {{ Form::label('password', trans('admin/users/table.password')) }}
                   {{ Form::password('password', array('class' => 'form-control')) }}
-                  {!! $errors->first('password', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('password', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
 
                 <!-- password confirm -->
                 <div class="form-group col-lg-6 {{ $errors->has('password_confirm') ? 'error' : '' }}">
                   {{ Form::label('password_confirmation', trans('admin/users/table.password_confirm')) }}
                   {{ Form::password('password_confirm', array('class' => 'form-control')) }}
-                  {!! $errors->first('password_confirmation', '<span class="alert-msg">:message</span>') !!}
+                  {!! $errors->first('password_confirmation', '<span class="alert-msg">پیام: </span>') !!}
                 </div>
               </div>
 
               <!-- Email credentials -->
               <div class="form-group col-lg-12">
-                <label>Email credentials</label>
+                <label>اعتبار ایمیل</label>
                 <div class="checkbox">
                     <label>
-                        <input type="checkbox" value="1" name="email_creds">Email my credentials to the email address above
+                        <input type="checkbox" value="1" name="email_creds">اطلاعات کاربری مرا به آدرس ایمیل بالا ارسال کنید.
                     </label>
                 </div>
             </div>
@@ -111,7 +111,7 @@ Create a User ::
 @stop
 
 @section('button')
-  <button class="btn btn-primary">Next: Save User</button>
+  <button class="btn btn-primary">بعدی: ذخیره کاربر</button>
   </form>
 @parent
 @stop

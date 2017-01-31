@@ -47,7 +47,7 @@
                <i class='icon-asterisk'></i></label>
               <div class="col-md-9">
                   {{ Form::select('assigned_to', $users_list , Input::old('assigned_to', $consumable->assigned_to), array('class'=>'select2', 'style'=>'min-width:350px')) }}
-                  {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 

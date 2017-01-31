@@ -21,7 +21,7 @@
         <i class='fa fa-asterisk'></i></label>
         <div class="col-md-6 required">
             <input class="form-control" type="text" name="name" id="name" value="{{ Input::old('name', $group->name) }}" />
-            {!! $errors->first('name', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+            {!! $errors->first('name', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
         </div>
     </div>
 
@@ -42,12 +42,12 @@
                     <label class="radio-padding">
                         {{ Form::radio('permission['.$permission_name.']', 1,
                         (array_key_exists($permission_name, $groupPermissions) && $groupPermissions[$permission_name]), ['class' => 'minimal']) }}
-                        Grant
+                        تایید صلاحیت
                     </label>
 
                     <label class="radio-padding">
                         {{ Form::radio('permission['.$permission_name.']', 0, (!array_key_exists($permission_name, $groupPermissions) || !$groupPermissions[$permission_name]), ['class' => 'minimal']) }}
-                        Deny
+                        رد صلاحیت
                     </label>
                 </div>
                 <hr>

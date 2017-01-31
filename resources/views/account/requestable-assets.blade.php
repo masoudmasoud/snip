@@ -105,7 +105,7 @@
                 <div class="tab-pane fade" id="models">
 
                     @if ($models->count() > 0)
-                    <h4>Requestable Models</h4>
+                    <h4>مدل های درخواست</h4>
                     <table class="table table-striped">
                         <thead>
                             <tr role="row">

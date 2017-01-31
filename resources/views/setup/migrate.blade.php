@@ -18,20 +18,20 @@ Create a User ::
         <div class="col-md-12">
             <div class="alert alert-warning">
                 <i class="fa fa-warning"></i>
-              There was nothing to migrate. Your database tables were already set up!
+			هیچ چیز برای انتقال وجود دارد. جداول پایگاه داده تنظیم شده است!
             </div>
         </div>
         @else
         <div class="col-md-12">
             <div class="alert alert-success">
                 <i class="fa fa-check"></i>
-                Your database tables have been created
+               جداول پایگاه داده ساخته شده اند
             </div>
         </div>
 
         @endif
 
-        <p>Migration output: </p>
+        <p>خروجی انتقال</p>
         <pre>{{ $output }}</pre>
         </div>
 
@@ -39,7 +39,7 @@ Create a User ::
 
 @section('button')
   <form action="{{ route('setup.user') }}" method="GET">
-    <button class="btn btn-primary">Next: Create User</button>
+    <button class="btn btn-primary">بعدی: ایجاد کاربر</button>
   </form>
 @parent
 @stop

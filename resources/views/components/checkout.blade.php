@@ -47,7 +47,7 @@
                <i class='icon-asterisk'></i></label>
               <div class="col-md-9">
                   {{ Form::select('asset_id', $assets_list , Input::old('asset_id', $component->asset_id), array('class'=>'select2', 'style'=>'width:100%')) }}
-                  {!! $errors->first('asset_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('asset_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 
@@ -56,7 +56,7 @@
                <i class='icon-asterisk'></i></label>
               <div class="col-md-9">
                 <input class="form-control" type="text" name="assigned_qty" id="assigned_qty" style="width: 70px;" value="{{ Input::old('assigned_qty') }}" />
-                {!! $errors->first('assigned_qty', '<br><span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                {!! $errors->first('assigned_qty', '<br><span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 

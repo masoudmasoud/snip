@@ -29,16 +29,16 @@
       <div class="nav-tabs-custom">
         <ul class="nav nav-tabs">
           <li class="active">
-            <a href="#assets" data-toggle="tab">Assets</a>
+            <a href="#assets" data-toggle="tab">دارایی ها</a>
           </li>
           <li>
-            <a href="#licenses" data-toggle="tab">Licenses</a>
+            <a href="#licenses" data-toggle="tab">گواهی نامه ها</a>
           </li>
           <li>
-            <a href="#accessories" data-toggle="tab">Accessories</a>
+            <a href="#accessories" data-toggle="tab">لوازم جانبی</a>
           </li>
           <li>
-            <a href="#consumables" data-toggle="tab">Consumables</a>
+            <a href="#consumables" data-toggle="tab">مواد مصرفی</a>
           </li>
         </ul>
         <div class="tab-content">

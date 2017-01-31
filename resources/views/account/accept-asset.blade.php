@@ -46,13 +46,13 @@
                 <div class="radio">
                     <label>
                         <input type="radio" name="asset_acceptance" id="accepted" value="accepted">
-                        I accept
+                        پذیرفتن
                     </label>
                 </div>
                 <div class="radio">
                     <label>
                         <input type="radio" name="asset_acceptance" id="declined" value="declined">
-                        I decline
+                        رد کردن
                     </label>
                 </div>
 

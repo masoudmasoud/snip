@@ -31,16 +31,16 @@
 
         <div class="box-body">
             <!-- checked out suppliers table -->
-            <h6>Assets</h6>
+            <h6>دارایی ها</h6>
             <br>
             <div class="table-responsive">
              <table class="display table table-hover">
                   <thead>
                       <tr role="row">
-                              <th class="col-md-3">Asset Tag</th>
-                              <th class="col-md-3"><span class="line"></span>Name</th>
-                              <th class="col-md-3"><span class="line"></span>User</th>
-                              <th class="col-md-2"><span class="line"></span>Actions</th>
+                              <th class="col-md-3">برچسب دارایی</th>
+                              <th class="col-md-3"><span class="line"></span>نام</th>
+                              <th class="col-md-3"><span class="line"></span>کاربر</th>
+                              <th class="col-md-2"><span class="line"></span>عملیات</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -75,7 +75,7 @@
         </div>
         <!-- side address column -->
         <div class="col-md-3">
-          <h4>Contact:</h4>
+          <h4>تماس :</h4>
              <ul class="list-unstyled">
 
               @if ($supplier->contact)
@@ -133,7 +133,7 @@
               @if ($supplier->id)
                 <div class="box-header with-border">
                   <div class="box-heading">
-                    <h3 class="box-title">Software</h3>
+                    <h3 class="box-title">نرم افزار</h3>
                   </div>
                 </div><!-- /.box-header -->
               @endif
@@ -144,8 +144,8 @@
               <table class="table table-hover">
                   <thead>
                       <tr>
-                          <th class="col-md-4">Name</th>
-                          <th class="col-md-4"><span class="line"></span>Serial</th>
+                          <th class="col-md-4">نام</th>
+                          <th class="col-md-4"><span class="line"></span>سریال</th>
                       </tr>
                   </thead>
                   <tbody>
@@ -171,7 +171,7 @@
               @if ($supplier->id)
                 <div class="box-header with-border">
                   <div class="box-heading">
-                    <h3 class="box-title"> Improvements</h3>
+                    <h3 class="box-title">ارتقا</h3>
                   </div>
                 </div><!-- /.box-header -->
               @endif

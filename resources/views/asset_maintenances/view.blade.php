@@ -2,13 +2,11 @@
 use Carbon\Carbon;
 ?>
 @extends('layouts/default')
-
 {{-- Page title --}}
 @section('title')
     {{ trans('admin/asset_maintenances/general.view') }} {{ $assetMaintenance->title }} 
     @parent
 @stop
-
 {{-- Page content --}}
 @section('content')
     <div class="row header">

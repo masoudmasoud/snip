@@ -59,7 +59,7 @@
 
 
       </form>
-      <p>Backup files are located in: {{ $path  }}</p>
+      <p>فایل های پشتیبانی در آدرس مقابل قرار دارند: {{ $path  }}</p>
 
 
 

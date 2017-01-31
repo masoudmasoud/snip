@@ -26,7 +26,7 @@
         <p class="help-block">{!! trans('admin/categories/general.eula_text_help') !!} </p>
         <p class="help-block">{!! trans('admin/settings/general.eula_markdown') !!} </p>
 
-        {!! $errors->first('eula_text', '<span class="alert-msg">:message</span>') !!}
+        {!! $errors->first('eula_text', '<span class="alert-msg">پیام: </span>') !!}
     </div>
 </div>
 

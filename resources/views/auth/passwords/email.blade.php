@@ -30,7 +30,7 @@
 
                                         <div class="col-md-12">
                                             <input type="email" class="form-control" name="email" value="{{ old('email') }}" placeholder="{{ trans('admin/users/table.email') }}">
-                                            {!! $errors->first('email', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                                            {!! $errors->first('email', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                                         </div>
                                     </div>
 

@@ -74,7 +74,7 @@
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td colspan="6" align="right"><strong>Totals:</strong></td>
+                        <td colspan="6" align="right"><strong>بالغ بر :</strong></td>
                         <td>{{number_format($totalDays)}}</td>
                         <td>
                           {{ $snipeSettings->default_currency }}

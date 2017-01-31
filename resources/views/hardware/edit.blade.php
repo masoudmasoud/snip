@@ -22,7 +22,7 @@
     <input class="form-control" type="text" name="asset_tag" id="asset_tag" value="{{ Input::old('asset_tag', \App\Models\Asset::autoincrement_asset()) }}">
     @endif
 
-    {!! $errors->first('asset_tag', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+    {!! $errors->first('asset_tag', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
 </div>
 </div>
 
@@ -38,11 +38,11 @@
     @endif
 
     <!-- onclick="return dependency('model')" -->
-    {!! $errors->first('model_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+    {!! $errors->first('model_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
 
 </div>
 <div class="col-md-1 col-sm-1 text-left">
-    <a href='#' data-toggle="modal" data-target="#createModal" data-dependency="model" data-select="model_select_id" class="btn btn-sm btn-default">New</a>
+    <a href='#' data-toggle="modal" data-target="#createModal" data-dependency="model" data-select="model_select_id" class="btn btn-sm btn-default">جدید</a>
     <span class="mac_spinner" style="padding-left: 10px; color: green; display:none; width: 30px;"><i class="fa fa-spinner fa-spin"></i> </span>
 </div>
 </div>
@@ -73,10 +73,10 @@
     <div class="col-md-7 col-sm-12">
         {{ Form::select('assigned_to', $assigned_to , Input::old('assigned_to', $item->assigned_to), array('class'=>'select2', 'id'=>'assigned_to', 'style'=>'width:100%')) }}
 
-        {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+        {!! $errors->first('assigned_to', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
     </div>
     <div class="col-md-1 col-sm-1 text-left" style="margin-left: -20px; padding-top: 3px">
-        <a href='#' data-toggle="modal"  data-target="#createModal" data-dependency="user" data-select='assigned_to' class="btn btn-sm btn-default">New</a>
+        <a href='#' data-toggle="modal"  data-target="#createModal" data-dependency="user" data-select='assigned_to' class="btn btn-sm btn-default">جدید</a>
     </div>
 </div>
 @endif
@@ -102,10 +102,10 @@ if ($item->id && $item->assetloc) {
     <div class="col-md-7 col-sm-11">
         {{ Form::select('rtd_location_id', $location_list , Input::old('rtd_location_id', $item->rtd_location_id), array('class'=>'select2', 'style'=>'width:100%','id'=>'rtd_location_select')) }}
 
-        {!! $errors->first('rtd_location_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+        {!! $errors->first('rtd_location_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
     </div>
     <div class="col-md-1 col-sm-1 text-left">
-        <a href='#' data-toggle="modal" data-target="#createModal" data-dependency='location' data-select='rtd_location_select' class="btn btn-sm btn-default">New</a>
+        <a href='#' data-toggle="modal" data-target="#createModal" data-dependency='location' data-select='rtd_location_select' class="btn btn-sm btn-default">جدید</a>
     </div>
 </div>
 
@@ -118,7 +118,7 @@ if ($item->id && $item->assetloc) {
     <div class="col-md-5">
         {{ Form::checkbox('image_delete'),array('class' => 'minimal') }}
         <img src="{{ config('app.url') }}/uploads/assets/{{ $item->image }}" />
-        {!! $errors->first('image_delete', '<span class="alert-msg">:message</span>') !!}
+        {!! $errors->first('image_delete', '<span class="alert-msg">پیام: </span>') !!}
     </div>
 </div>
 @endif
@@ -128,7 +128,7 @@ if ($item->id && $item->assetloc) {
     <div class="col-md-5">
         <!-- {{ Form::file('image') }} -->
         <input type="file" id="file-upload" accept="image/*" name="image">
-        {!! $errors->first('image', '<span class="alert-msg">:message</span>') !!}
+        {!! $errors->first('image', '<span class="alert-msg">پیام: </span>') !!}
     </div>
 </div>
 

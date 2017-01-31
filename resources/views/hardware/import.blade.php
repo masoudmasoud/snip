@@ -16,15 +16,15 @@
     <div class="box">
         <div class="box-body">
             <div class="alert alert-warning">
-                <strong>Warning</strong> {{trans('admin/hardware/message.import.errorDetail')}}
+                <strong>هشدار</strong> {{trans('admin/hardware/message.import.errorDetail')}}
             </div>
 
     <div class="errors-table">
 
         <table class="table table-striped table-bordered" id="errors-table">
             <thead>
-            <th>Asset</th>
-            <th>Errors</th>
+            <th>دارایی</th>
+            <th>خطاها</th>
             </thead>
             <tbody>
             @foreach (session('import_errors') as $asset => $itemErrors)
@@ -57,13 +57,13 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title">Import File:</h4>
+                    <h4 class="modal-title">وارد کردن فایل:</h4>
                 </div>
                 <div class="modal-body">
 
                     <div class="dynamic-form-row">
                         <div class="col-md-4 col-xs-12">
-                            <label for="import-type">Import Type:</label>
+                            <label for="import-type">نوع ورودی:</label>
                         </div>
                         <div class="col-md-8 col-xs-12">
                             {{ Form::select('import-type', array('asset' => 'Assets', 'accessory' => "Accessories", 'consumable' => "Consumables") , 'asset', array('class'=>'select2 parent', 'style'=>'width:100%','id' =>'import-type')) }}
@@ -71,7 +71,7 @@
                     </div>
                     <div class="dynamic-form-row">
                         <div class="col-md-4 col-xs-12">
-                            <label for="import-update">Update Existing Values?:</label>
+                            <label for="import-update">بروزرسانی مقادیر موجود: </label>
                         </div>
                         <div class="col-md-8 col-xs-12">
                             {{ Form::checkbox('import-update') }}
@@ -98,7 +98,7 @@
                 <!-- The fileinput-button span is used to style the file input field as button -->
                     <span class="btn btn-info fileinput-button">
                         <i class="fa fa-plus icon-white"></i>
-                        <span>Select Import File...</span>
+                        <span>انتخاب فایل ورودی ...</span>
                         <!-- The file input field used as target for the file upload widget -->
                         <input id="fileupload" type="file" name="files[]" data-url="{{ config('app.url') }}/api/hardware/import" accept="text/csv">
                     </span>
@@ -108,7 +108,7 @@
                 <div class="col-md-11">
                     <div id="progress" class="progress progress-striped active" style="margin-top: 8px;">
                         <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
-                            <span id="progress-bar-text">0% Complete</span>
+                            <span id="progress-bar-text">0% تکمیل شد</span>
                         </div>
                     </div>
                 </div>

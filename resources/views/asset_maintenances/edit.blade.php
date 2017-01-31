@@ -49,7 +49,7 @@
                   @else
                       {{ Form::select('asset_id', $asset_list , Input::old('asset_id', $selectedAsset), ['class'=>'select2', 'style'=>'min-width:350px', 'enabled' => 'false']) }}
                   @endif
-                  {!! $errors->first('asset_id', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('asset_id', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 
@@ -65,7 +65,7 @@
               </label>
               <div class="col-md-7{{  (\App\Helpers\Helper::checkIfRequired($item, 'title')) ? ' required' : '' }}">
                   <input class="form-control" type="text" name="title" id="title" value="{{ Input::old('title', $item->title) }}" />
-                  {!! $errors->first('title', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('title', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 
@@ -76,7 +76,7 @@
               <div class="input-group col-md-2{{  (\App\Helpers\Helper::checkIfRequired($item, 'start_date')) ? ' required' : '' }}">
                   <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="start_date" id="start_date" value="{{ Input::old('start_date', $item->start_date) }}">
                   <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                  {!! $errors->first('start_date', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('start_date', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 
@@ -86,7 +86,7 @@
               <div class="input-group col-md-2">
                   <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="completion_date" id="completion_date" value="{{ Input::old('completion_date', $item->completion_date) }}">
                   <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                  {!! $errors->first('completion_date', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('completion_date', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 
@@ -108,7 +108,7 @@
                   <div class="input-group">
                       <span class="input-group-addon">{{ $snipeSettings->default_currency }}</span>
                       <input class="col-md-2 form-control" type="text" name="cost" id="cost" value="{{ Input::old('cost', \App\Helpers\Helper::formatCurrencyOutput($item->cost)) }}" />
-                      {!! $errors->first('cost', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                      {!! $errors->first('cost', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                   </div>
               </div>
           </div>
@@ -118,7 +118,7 @@
               <label for="notes" class="col-md-3 control-label">{{ trans('admin/asset_maintenances/form.notes') }}</label>
               <div class="col-md-7">
                   <textarea class="col-md-6 form-control" id="notes" name="notes">{{ Input::old('notes', $item->notes) }}</textarea>
-                  {!! $errors->first('notes', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                  {!! $errors->first('notes', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
           </div>
 

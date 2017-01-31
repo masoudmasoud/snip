@@ -183,7 +183,7 @@
                   </tr>
                   @if ($setting->ldap_enabled == 1)
                   <tr id="ldaptestrow">
-                      <td class="col-md-4">Test LDAP Connection</td>
+                      <td class="col-md-4">بررسی ارتباط LDAP</td>
                       <td class="col-md-8">
 
                          <a class="btn btn-default btn-sm pull-left" id="ldaptest" style="margin-right: 10px;"> Test LDAP</a>

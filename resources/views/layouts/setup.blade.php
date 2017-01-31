@@ -3,7 +3,7 @@
     <head>
       <title>
         @section('title')
-         Snipe-IT Setup
+         تنظیمات سیستم
         @show
       </title>
 
@@ -75,31 +75,31 @@
                     <div class="row bs-wizard" style="border-bottom:0;">
 
                       <div class="col-xs-3 bs-wizard-step {{ ($step > 1) ? 'complete':'active' }}">
-                        <div class="text-center bs-wizard-stepnum">Step 1</div>
+                        <div class="text-center bs-wizard-stepnum">مرحله 1</div>
                         <div class="progress"><div class="progress-bar"></div></div>
                         <a href="{{ route('setup') }}" class="bs-wizard-dot"></a>
-                        <div class="bs-wizard-info text-center">Configuration Check</div>
+                        <div class="bs-wizard-info text-center">بررسی تنظیمات</div>
                       </div>
 
                       <div class="col-xs-3 bs-wizard-step {{ ($step == 2) ? 'active': (($step < 2) ? 'disabled' : 'complete')  }}"><!-- complete -->
-                        <div class="text-center bs-wizard-stepnum">Step 2</div>
+                        <div class="text-center bs-wizard-stepnum">مرحله 2</div>
                         <div class="progress"><div class="progress-bar"></div></div>
                         <a href="{{ route('setup.migrate') }}" class="bs-wizard-dot"></a>
-                        <div class="bs-wizard-info text-center">Create Database Tables</div>
+                        <div class="bs-wizard-info text-center">ساختن جداول پایگاه داده</div>
                       </div>
 
                       <div class="col-xs-3 bs-wizard-step {{ ($step == 3) ? 'active': (($step < 3) ? 'disabled' : 'complete')  }}"><!-- complete -->
-                        <div class="text-center bs-wizard-stepnum">Step 3</div>
+                        <div class="text-center bs-wizard-stepnum">مرحله 3</div>
                         <div class="progress"><div class="progress-bar"></div></div>
                         <a href="{{ route('setup.user') }}" class="bs-wizard-dot"></a>
-                        <div class="bs-wizard-info text-center">Create Admin User</div>
+                        <div class="bs-wizard-info text-center">ایجاد کاربر مدیر</div>
                       </div>
 
                       <div class="col-xs-3 bs-wizard-step {{ ($step == 4) ? 'active': (($step < 4) ? 'disabled' : 'complete')  }}"><!-- active -->
-                        <div class="text-center bs-wizard-stepnum">Step 4</div>
+                        <div class="text-center bs-wizard-stepnum">مرحله 4</div>
                         <div class="progress"><div class="progress-bar"></div></div>
                         <a href="#" class="bs-wizard-dot"></a>
-                        <div class="bs-wizard-info text-center"> Finished!</div>
+                        <div class="bs-wizard-info text-center"> تکمیل شد!</div>
                       </div>
                   </div>
                 </div>

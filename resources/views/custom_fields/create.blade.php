@@ -33,7 +33,7 @@
                  </label>
                     <div class="col-md-6">
                       <input class="form-control" type="text" name="name" id="name" value="{{ Input::old('name') }}" />
-                      {!! $errors->first('name', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+                      {!! $errors->first('name', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
                     </div>
             </div>
           </div>
@@ -46,8 +46,8 @@
       </div>
 </div>
 <div class="col-md-3">
-  <h4>About Fieldsets</h4>
-  <p>Fieldsets work like containers of the custom fields you've created. This allows you to group commonly used custom attributes together for easy associations. </p>
+  <h4>درمورد فیلد</h4>
+  <p>  مانند ظروفی از فیلهای سفارشی که ساخته اید عمل می کنند. به شما اجازه می دهند تا فیلد هایی که به طور معمول در یک محیط هستند را گروه بندی کنید. </p>
 </div>
 
 @stop
