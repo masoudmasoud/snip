@@ -10,11 +10,11 @@ return array(
     'checkedout_to'		=> 'تحویل شده به
 
 ',
-    'checkout_date'		=> 'چک کردن تاریخ
+    'checkout_date'		=> 'تاریخ تحویل دادن
 ',
-    'checkin_date'		=> 'تاریخ ورود
+    'checkin_date'		=> 'تاریخ تحویل گرفتن
 ',
-    'checkout_to'		=> 'اتمام به
+    'checkout_to'		=> 'تحویل به
 ',
     'cost'				=> 'هزینه خرید',
     'create'			=> 'ایجاد دارایی

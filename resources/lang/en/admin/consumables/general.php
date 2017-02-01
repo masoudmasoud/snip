@@ -1,13 +1,13 @@
 <?php
 
 return array(
-    'about_consumables_title' 			=> 'About Consumables',
-    'about_consumables_text'  			=> 'Consumables are anything purchased that will be used up over time. For example, printer ink or copier paper.',
-    'checkout'                          => 'Checkout Consumable to User',
-    'consumable_name'                   => 'Consumable Name',
-    'create'                            => 'Create Consumable',
-    'item_no'                           => 'Item No.',
-    'remaining' 			            => 'Remaining',
-    'total' 			                => 'Total',
-    'update'                            => 'Update Consumable',
+    'about_consumables_title' 			=> 'درباره مواد مصرفی',
+    'about_consumables_text'  			=> 'مواد مصرفی هر چیزی خریداری خواهد شد که تا در طول زمان استفاده می شود. به عنوان مثال، جوهر چاپگر کاغذ دستگاه کپی.',
+    'checkout'                          => 'بررسی مواد مصرفی به کاربر',
+    'consumable_name'                   => 'نام های مصرفی',
+    'create'                            => 'ایجاد مواد مصرفی',
+    'item_no'                           => 'شماره مورد ',
+    'remaining' 			            => 'یاقیمانده',
+    'total' 			                => 'مجموع',
+    'update'                            => 'به روز رسانی لوازم مصرفي',
 );

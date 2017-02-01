@@ -71,7 +71,7 @@
             <div class="form-group input-append {{ $errors->has('purchase_date') ? 'error' : '' }}" >
                 <label class="control-label" for="purchase_date">{{ trans('admin/hardware/form.date') }}</label>
                 <div class="controls">
-                <input type="text" class="datepicker span2" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="purchase_date" id="purchase_date" value="{{ Input::old('purchase_date', $asset->purchase_date) }}">
+                <input type="text" class="datepicker span2" data-date-format="yyyy-mm-dd" placeholder="انتخاب تاریخ" name="purchase_date" id="purchase_date" value="{{ Input::old('purchase_date', $asset->purchase_date) }}">
                 {!! $errors->first('purchase_date', '<span class="help-inline"><i class="fa fa-times"></i>پیام: </span>') !!}
 
                 </div>

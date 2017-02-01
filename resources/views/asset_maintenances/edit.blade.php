@@ -74,7 +74,7 @@
               <label for="start_date" class="col-md-3 control-label">{{ trans('admin/asset_maintenances/form.start_date') }}
                   </label>
               <div class="input-group col-md-2{{  (\App\Helpers\Helper::checkIfRequired($item, 'start_date')) ? ' required' : '' }}">
-                  <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="start_date" id="start_date" value="{{ Input::old('start_date', $item->start_date) }}">
+                  <input class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="انتخاب تاریخ" name="start_date" id="start_date" value="{{ Input::old('start_date', $item->start_date) }}">
                   <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                   {!! $errors->first('start_date', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>
@@ -84,7 +84,7 @@
           <div class="form-group {{ $errors->has('completion_date') ? ' has-error' : '' }}">
               <label for="start_date" class="col-md-3 control-label">{{ trans('admin/asset_maintenances/form.completion_date') }}</label>
               <div class="input-group col-md-2">
-                  <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="completion_date" id="completion_date" value="{{ Input::old('completion_date', $item->completion_date) }}">
+                  <input class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="انتخاب تاریخ" name="completion_date" id="completion_date" value="{{ Input::old('completion_date', $item->completion_date) }}">
                   <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                   {!! $errors->first('completion_date', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
               </div>

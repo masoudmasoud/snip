@@ -332,7 +332,7 @@ class LocationsController extends Controller
         $rows = array();
 
         foreach ($locations as $location) {
-            $actions = '<nobr><a href="'.route('update/location', $location->id).'" class="btn btn-warning btn-sm" style="margin-right:5px;"><i class="fa fa-pencil icon-white"></i></a><a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/location', $location->id).'" data-content="'.trans('admin/locations/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($location->name).'?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a></nobr>';
+            $actions = '<nobr><a href="'.route('update/location', $location->id).'" class="btn btn-warning btn-sm" style="margin-right:5px;"><i class="fa fa-pencil icon-white"></i></a><a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/location', $location->id).'" data-content="'.trans('admin/locations/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($location->name).'؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a></nobr>';
 
             $rows[] = array(
                 'id'            => $location->id,

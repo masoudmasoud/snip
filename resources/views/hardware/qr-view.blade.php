@@ -433,7 +433,7 @@
 
 		 <div class="form-group col-md-12">
 		 <div class="input-group col-md-12">
-		 	<input class="col-md-12 form-control" type="text" name="notes" id="notes" placeholder="Notes">
+		 	<input class="col-md-12 form-control" type="text" name="notes" id="notes" placeholder="یادداشت ها">
 		</div>
 		</div>
 		<div class="form-group col-md-12">

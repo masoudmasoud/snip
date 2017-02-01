@@ -1,11 +1,11 @@
 <?php
 
 return array(
-	'dl_csv'      				=> 'Download CSV',
+	'dl_csv'      				=> 'دانلود CSV',
 	'eula_text'      			=> 'EULA',
-    'id'      					=> 'ID',
-    'require_acceptance'      	=> 'Acceptance',
-    'title'      				=> 'Accessory Name',
+    'id'      					=> 'شناسه',
+    'require_acceptance'      	=> 'پذیرش',
+    'title'      				=> 'نام وسیله',
 
 
 );

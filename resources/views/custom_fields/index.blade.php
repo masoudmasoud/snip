@@ -17,7 +17,7 @@
           <div class="box-header with-border">
             <h3 class="box-title">{{ trans('admin/custom_fields/general.fieldsets') }}</h3>
             <div class="box-tools pull-right">
-              <a href="{{ route('admin.custom_fields.create') }}" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Create a new fieldset">{{ trans('admin/custom_fields/general.create_fieldset') }}</a>
+              <a href="{{ route('admin.custom_fields.create') }}" class="btn btn-sm btn-primary" data-toggle="tooltip" title="ایجاد تنظیمات فیلد جدید">{{ trans('admin/custom_fields/general.create_fieldset') }}</a>
             </div>
           </div><!-- /.box-header -->
          <div class="box-body">
@@ -86,7 +86,7 @@
         <div class="box-header with-border">
           <h3 class="box-title">{{ trans('admin/custom_fields/general.custom_fields') }}</h3>
           <div class="box-tools pull-right">
-            <a href="{{ route('admin.custom_fields.create-field') }}" class="btn btn-sm btn-primary" data-toggle="tooltip" title="Create a new custom field">{{ trans('admin/custom_fields/general.create_field') }}</a>
+            <a href="{{ route('admin.custom_fields.create-field') }}" class="btn btn-sm btn-primary" data-toggle="tooltip" title="ایجاد فیلد سفارشی جدید">{{ trans('admin/custom_fields/general.create_field') }}</a>
           </div>
         </div><!-- /.box-header -->
        <div class="box-body">

@@ -16,7 +16,12 @@
     padding-left: 0px !important;
 }
 </style>
+<?php 
 
+include_once($_SERVER['DOCUMENT_ROOT'].'/jdf.php');
+
+
+ ?>
 
 <div class="row">
 
@@ -81,7 +86,7 @@
 
                     <div class="col-md-8">
                       <div class="col-md-4 input-group required">
-                      <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" name="checkout_at" id="checkout_at" value="{{ Input::old('checkout_at', date('Y-m-d')) }}">
+                      <input class="datepicker form-control" data-date-format="yyyy-mm-dd" name="checkout_at" id="checkout_at" value="{{ Input::old('checkout_at', jdate('Y-m-d')) }}">
                       <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
                       {!! $errors->first('checkout_at', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
@@ -96,7 +101,7 @@
 
                     <div class="col-md-8">
                       <div class="col-md-4 input-group">
-                      <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" name="expected_checkin" id="expected_checkin" value="{{ Input::old('expected_checkin') }}">
+                      <input class="datepicker form-control" data-date-format="yyyy-mm-dd" name="expected_checkin" id="expected_checkin" value="{{ Input::old('expected_checkin') }}">
                       <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
                     </div>
                       {!! $errors->first('expected_checkin', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}

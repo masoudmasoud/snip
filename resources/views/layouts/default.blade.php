@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
   <head>
     <meta charset="utf-8">
@@ -609,7 +610,7 @@
                 </div>
                 <div class="modal-body"></div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-default  pull-left" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-default  pull-left" data-dismiss="modal">خیر</button>
                     <a class="btn btn-outline" id="dataConfirmOK">@lang('general.yes')</a>
                 </div>
             </div>

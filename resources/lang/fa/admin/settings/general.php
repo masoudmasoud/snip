@@ -24,7 +24,7 @@ return array(
   'default_language'					=> 'زبان پیش فرض',
 	'default_eula_help_text'	=> 'همچنین می توانید  EULA های سفارشی به دسته های خاص دارایی مرتبط کنید.',
     'display_asset_name'        => 'نمایش نام حساب',
-    'display_checkout_date'     => 'نمایش تاریخ پرداخت',
+    'display_checkout_date'     => 'نمایش تاریخ تحویل',
     'display_eol'               => 'نمایش EOL در جدول',
     'display_qr'                => 'نمایش کدهای مربعی',
 	'display_alt_barcode'		=> 'Display 1D barcode',

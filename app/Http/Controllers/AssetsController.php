@@ -892,7 +892,7 @@ class AssetsController extends Controller
                     'text/plain',
                     'text/comma-separated-values',
                     'text/tsv'))) {
-                    $results['error']='File type must be CSV';
+                    $results['error']='نوع فایل شما باید CSV باشد';
                     return $results;
                 }
 
@@ -1163,19 +1163,19 @@ class AssetsController extends Controller
                         $asset->assigned_to = $user->id;
 
                         if ($asset->save()) {
-                            $status['success'][]['asset'][$asset_tag]['msg'] = 'Asset successfully matched for '.Helper::array_smart_fetch($row, "name").$user_query.' on '.$item[$asset_tag][$batch_counter]['checkout_date'];
+                            $status['success'][]['asset'][$asset_tag]['msg'] = ' دارایی ها با موفقیت مطابقت یافتند: '.Helper::array_smart_fetch($row, "نام").$user_query.' on '.$item[$asset_tag][$batch_counter]['checkout_date'];
                         } else {
-                            $status['error'][]['asset'][$asset_tag]['msg'] = 'Asset and user was matched but could not be saved.';
+                            $status['error'][]['asset'][$asset_tag]['msg'] = 'دارایی و کاربر تطبیق داده شده اند ولی ذخیره نشده اند.';
                         }
 
                     } else {
                         $item[$asset_tag][$batch_counter]['checkedout_to'] = null;
-                        $status['error'][]['user'][Helper::array_smart_fetch($row, "name")]['msg'] = 'User does not exist so no checkin log was created.';
+                        $status['error'][]['user'][Helper::array_smart_fetch($row, "name")]['msg'] = 'کاربر موجود نیست بنابراین لیست تحویل به کاربر ایجاد نشد.';
                     }
 
                 } else {
                     $item[$asset_tag][$batch_counter]['asset_id'] = null;
-                    $status['error'][]['asset'][$asset_tag]['msg'] = 'Asset does not exist so no match was attempted.';
+                    $status['error'][]['asset'][$asset_tag]['msg'] = 'دارایی موجود نیست بنابراین تلاشی برای تطبیق صورت نگرفت';
                 }
 
 
@@ -1766,7 +1766,7 @@ class AssetsController extends Controller
                 }
                 if (Gate::allows('assets.delete')) {
                     $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/hardware',
-                            $asset->id) . '" data-content="' . trans('admin/hardware/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($asset->asset_tag) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                            $asset->id) . '" data-content="' . trans('admin/hardware/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($asset->asset_tag) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
                 }
             } elseif ($asset->model->deleted_at=='') {
                 $actions .= '<a href="'.route('restore/hardware', $asset->id).'" title="Restore asset" data-toggle="tooltip" class="btn btn-warning btn-sm"><i class="fa fa-recycle icon-white"></i></a>';

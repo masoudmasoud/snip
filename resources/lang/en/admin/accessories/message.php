@@ -2,35 +2,35 @@
 
 return array(
 
-    'does_not_exist' => 'The accessory does not exist.',
-    'assoc_users'	 => 'This accessory currently has :count items checked out to users. Please check in the accessories and and try again. ',
+    'does_not_exist' => 'وسیله موجود نیست',
+    'assoc_users'	 => 'این وسیله هم اکنون:آیتم های چک شده به کاربران را حساب کنید.لطفا در لوازم جانبی چک کنید و دوباره امتحان کنید',
 
     'create' => array(
-        'error'   => 'The accessory was not created, please try again.',
-        'success' => 'The accessory was successfully created.'
+        'error'   => 'وسیله ایجاد نشد.لطفا دوباره امتحان کنید.',
+        'success' => 'وسیله با موفقیت ایجاد شد'
     ),
 
     'update' => array(
-        'error'   => 'The accessory was not updated, please try again',
-        'success' => 'The accessory was updated successfully.'
+        'error'   => 'وسیله به روزرسانی نشد لطفا دوباره امتحان کنید',
+        'success' => 'وسیله با موفقیت به روزرسانی شد.'
     ),
 
     'delete' => array(
-        'confirm'   => 'Are you sure you wish to delete this accessory?',
-        'error'   => 'There was an issue deleting the accessory. Please try again.',
-        'success' => 'The accessory was deleted successfully.'
+        'confirm'   => 'آیا مطمئن هستید می خواهید این وسیله حذف شود؟',
+        'error'   => 'اشکال در حذف دسته بندی.لطفا دوباره امتحان کنید.',
+        'success' => 'دسته بندی با موفقیت حذف شد.'
     ),
 
      'checkout' => array(
-        'error'   		=> 'Accessory was not checked out, please try again',
-        'success' 		=> 'Accessory checked out successfully.',
-        'user_does_not_exist' => 'That user is invalid. Please try again.'
+        'error'   		=> 'وسیله چک نشده بود. لطفا دوباره امتحان کنید',
+        'success' 		=> 'وسیله با موفقیت چک شد.',
+        'user_does_not_exist' => 'کاربر نامعتبر است. لطفا دوباره امتحان کنید.'
     ),
 
     'checkin' => array(
-        'error'   		=> 'Accessory was not checked in, please try again',
-        'success' 		=> 'Accessory checked in successfully.',
-        'user_does_not_exist' => 'That user is invalid. Please try again.'
+        'error'   		=> 'وسیله چک نشده.لطفا دوباره امتحان کنید',
+        'success' 		=> 'وسیله با موفقیت چک شد.',
+        'user_does_not_exist' => 'کاربر نامعتبر است لطفا دوباره امتحان کنید.'
     )
 
 

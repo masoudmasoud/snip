@@ -452,7 +452,7 @@ class ConsumablesController extends Controller
             }
             if (Gate::allows('consumables.delete')) {
                 $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/consumable',
-                        $consumable->id) . '" data-content="' . trans('admin/consumables/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($consumable->name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                        $consumable->id) . '" data-content="' . trans('admin/consumables/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($consumable->name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
             }
 
             $actions .='</nobr>';

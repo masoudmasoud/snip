@@ -30,14 +30,13 @@
 			@endif
 
 			<p>
-				فایل csv با یک یا چند کاربر را بارگذاری کنید. رمز بور کاربران به صورت خودکار تولید می شود.فیلد <strong>اول</strong> فایل شما باید دارای مارد زیر باشد: </p>
+				فایل csv با یک یا چند کاربر را بارگذاری کنید. رمز بور کاربران به صورت خودکار تولید می شود.فیلد <strong>اول</strong> فایل شما باید دارای موارد زیر باشد: </p>
 				
 
-        <p><strong>نام ،نام خانوادگی،نام کاربری،ایمیل،شماره مکان،شماره تماس،عنوان شغل،شماره استخدام،شماره شرکت</strong>. </p>
+        <p><strong>نام، نام خانوادگی، نام کاربری، ایمیل، شماره مکان، شماره تماس، عنوان شغل، شماره استخدام، شماره شرکت</strong>. </p>
 		
 
-        <p>Any additional fields to the right of those fields will be ignored. Email is optional, however users will not be able to recover their passwords or receive EULAs if you do not provide an email address. If you wish to include a company association, you must reference the ID number of an existing company - companies will not be created on the fly.
-			</p>
+        <p>فیلد های اضافی نادیده گرفته خواهند شد. (ایمیل اختیاری است)</p>
 
             @if (config('app.lock_passwords'))
                 <p>نکته: اعلانات ایمیلی برای کاربران در این سیستم غیر فعال شده است</p>
@@ -56,7 +55,7 @@
     				<div class="col-sm-2 ">
     				</div>
     				<div class="col-sm-5">
-    					{{ Form::checkbox('has_headers', '1', Input::old('has_headers')) }} فایل شما دارای هدر می باشد.
+    					{{ Form::checkbox('has_headers', '1', Input::old('has_headers')) }} فایل شما دارای هدر می باشد
     				</div>
     			</div>
 
@@ -66,8 +65,7 @@
     				<div class="col-sm-2 ">
     				</div>
     				<div class="col-sm-5">
-    					{{ Form::checkbox('email_user', '1', Input::old('email_user')) }} Email these users their credentials? (Only possible where email address is included with user data.)
-    				</div>اطلاعات کاربران برایشان ایمیل شود؟
+    					{{ Form::checkbox('email_user', '1', Input::old('email_user')) }} اطلاعات کاربران برایشان ایمیل شود</div>
     			</div>
 
     			<!-- Activate -->
@@ -75,8 +73,7 @@
     				<div class="col-sm-2 ">
     				</div>
     				<div class="col-sm-5">
-    					{{ Form::checkbox('activate', '1', Input::old('activate')) }} فعال کردن کاربر؟
-    				</div>
+    					{{ Form::checkbox('activate', '1', Input::old('activate')) }} فعال کردن کاربر</div>
     			</div>
 
 

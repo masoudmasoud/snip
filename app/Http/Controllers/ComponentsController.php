@@ -462,7 +462,7 @@ class ComponentsController extends Controller
 
             if (Gate::allows('components.delete')) {
                 $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/component',
-                        $component->id) . '" data-content="' . trans('admin/components/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($component->name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                        $component->id) . '" data-content="' . trans('admin/components/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($component->name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
             }
 
             $actions .='</nobr>';

@@ -1,22 +1,24 @@
 <?php
 
 return array(
-    'about_accessories_title' 			=> 'About Accessories',
-    'about_accessories_text'  			=> 'Accessories are anything you issue to users but that do not have a serial number (or you do not care about tracking them uniquely). For example, computer mice or keyboards.',
-    'accessory_category' 				=> 'Accessory Category',
-    'accessory_name'  					=> 'Accessory Name',
-    'checkout'  							=> 'Checkout Accessory',
-    'checkin'  							=> 'Checkin Accessory',
-    'create'  							=> 'Create Accessory',
-    'edit'  							=> 'Edit Accessory',
-    'eula_text'							=> 'Category EULA',
-    'eula_text_help'					=> 'This field allows you to customize your EULAs for specific types of assets. If you only have one EULA for all of your assets, you can check the box below to use the primary default.',
-    'require_acceptance'				=> 'Require users to confirm acceptance of assets in this category.',
-    'no_default_eula'					=> 'No primary default EULA found. Add one in Settings.',
-    'total'  							=> 'Total',
-    'remaining'  						=> 'Avail',
-    'update'  							=> 'Update Accessory',
-    'use_default_eula'					=> 'Use the <a href="#" data-toggle="modal" data-target="#eulaModal">primary default EULA</a> instead.',
-    'use_default_eula_disabled'			=> '<del>Use the primary default EULA instead.</del> No primary default EULA is set. Please add one in Settings.',
+    'about_accessories_title' 			=> 'در مورد لوازم جانبی',
+    'about_accessories_text'  			=> 'لوازم جانبی هر چیزی است که شما به کاربر صادر میکنید ولی شماره سریال ندارد(یا برای شما ردیابی منحصر به فرد آنها اهمیتی ندارد).برای مثال موس یا کیبورد.',
+    'accessory_category' 				=> 'دسته بندی لوازم جانبی',
+    'accessory_name'  					=> 'نام وسیله',
+    'checkout'  							=> 'چک کردن وسیله',
+    'checkin'  							=> 'چک کردن وسیله',
+    'create'  							=> 'ایجاد وسیله',
+    'edit'  							=> 'ویرایش وسیله',
+    'eula_text'							=> 'دسته بندی EULA',
+    'eula_text_help'					=> 'این فید به امکان این را میدهد که EULA های خود را با توجه به دارایی سفارشی سازی کنید. اگر شما فقط یک EULA برای تمام دارایی خود دارید،میتوانید گزینه زیر را فعال کنید تا از پیشفرض اولیه استفاده کنید.',
+    'require_acceptance'				=> 'نیاز به کاربرانی جهت تایید پذیرش دارایی ها در این دسته بندی.',
+    'no_default_eula'					=> 'هیچ EULA اولیه پیشفرضی یافت نشد.در تنظیمات اضافه کنید',
+    'total'  							=> 'مجموع',
+    'remaining'  						=> 'سود',
+    'update'  							=> 'به روزرساتی وسیله',
+    'use_default_eula'					=> 'از Use the <a href="#" data-toggle="modal" data-target="#eulaModal">EULA پیشفرض اولیه</a> instead.
+ استفاده کنید',
+    'use_default_eula_disabled'			=> 'از پیشفرض اولیه EULA استفاده کنید.<del>هیچ پیشفرضی اولیه ای تنظیم نشده است</del>
+در تنظیمات اضافه کنید',
 
 );

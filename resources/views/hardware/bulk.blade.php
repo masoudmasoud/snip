@@ -42,7 +42,7 @@
         <div class="form-group {{ $errors->has('purchase_date') ? ' has-error' : '' }}">
             <label for="purchase_date" class="col-md-2 control-label">{{ trans('admin/hardware/form.date') }}</label>
             <div class="input-group col-md-3">
-                <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Select Date" name="purchase_date" id="purchase_date" value="{{ Input::old('purchase_date') }}">
+                <input class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="انتخاب تاریخ" name="purchase_date" id="purchase_date" value="{{ Input::old('purchase_date') }}">
                 <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
             {!! $errors->first('purchase_date', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>

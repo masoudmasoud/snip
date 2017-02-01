@@ -302,7 +302,7 @@ class StatuslabelsController extends Controller
                 $label_type = trans('admin/statuslabels/table.undeployable');
             }
 
-            $actions = '<a href="'.route('update/statuslabel', $statuslabel->id).'" class="btn btn-warning btn-sm" style="margin-right:5px;"><i class="fa fa-pencil icon-white"></i></a><a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/statuslabel', $statuslabel->id).'" data-content="'.trans('admin/statuslabels/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($statuslabel->name).'?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+            $actions = '<a href="'.route('update/statuslabel', $statuslabel->id).'" class="btn btn-warning btn-sm" style="margin-right:5px;"><i class="fa fa-pencil icon-white"></i></a><a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/statuslabel', $statuslabel->id).'" data-content="'.trans('admin/statuslabels/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($statuslabel->name).'؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
 
             if ($statuslabel->color!='') {
                 $color = '<div class="pull-left" style="margin-right: 5px; height: 20px; width: 20px; background-color: '.e($statuslabel->color).'"></div>'.e($statuslabel->color);

@@ -227,7 +227,7 @@ class ManufacturersController extends Controller
         $rows = array();
 
         foreach ($manufacturers as $manufacturer) {
-            $actions = '<a href="'.route('update/manufacturer', $manufacturer->id).'" class="btn btn-warning btn-sm" style="margin-right:5px;"><i class="fa fa-pencil icon-white"></i></a><a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/manufacturer', $manufacturer->id).'" data-content="'.trans('admin/manufacturers/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($manufacturer->name).'?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+            $actions = '<a href="'.route('update/manufacturer', $manufacturer->id).'" class="btn btn-warning btn-sm" style="margin-right:5px;"><i class="fa fa-pencil icon-white"></i></a><a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/manufacturer', $manufacturer->id).'" data-content="'.trans('admin/manufacturers/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($manufacturer->name).'؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
 
             $rows[] = array(
                 'id'              => $manufacturer->id,
@@ -307,7 +307,7 @@ class ManufacturersController extends Controller
 
             $actions = '';
             if ($asset->deleted_at=='') {
-                $actions = '<div style=" white-space: nowrap;"><a href="'.route('clone/hardware', $asset->id).'" class="btn btn-info btn-sm" title="Clone asset"><i class="fa fa-files-o"></i></a> <a href="'.route('update/hardware', $asset->id).'" class="btn btn-warning btn-sm"><i class="fa fa-pencil icon-white"></i></a> <a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/hardware', $asset->id).'" data-content="'.trans('admin/hardware/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($asset->asset_tag).'?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a></div>';
+                $actions = '<div style=" white-space: nowrap;"><a href="'.route('clone/hardware', $asset->id).'" class="btn btn-info btn-sm" title="Clone asset"><i class="fa fa-files-o"></i></a> <a href="'.route('update/hardware', $asset->id).'" class="btn btn-warning btn-sm"><i class="fa fa-pencil icon-white"></i></a> <a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'.route('delete/hardware', $asset->id).'" data-content="'.trans('admin/hardware/message.delete.confirm').'" data-title="'.trans('general.delete').' '.htmlspecialchars($asset->asset_tag).'؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a></div>';
             } elseif ($asset->deleted_at!='') {
                 $actions = '<a href="'.route('restore/hardware', $asset->id).'" class="btn btn-warning btn-sm"><i class="fa fa-recycle icon-white"></i></a>';
             }
@@ -375,7 +375,7 @@ class ManufacturersController extends Controller
             if (Gate::allows('licenses.delete')) {
                 $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'
                  . route('delete/license', $license->id)
-                 . '" data-content="' . trans('admin/licenses/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($license->name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                 . '" data-content="' . trans('admin/licenses/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($license->name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
             }
             $actions .='</span>';
 
@@ -442,7 +442,7 @@ class ManufacturersController extends Controller
             }
             if (Gate::allows('accessories.delete')) {
                 $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/accessory',
-                        $accessory->id) . '" data-content="' . trans('admin/accessories/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($accessory->name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                        $accessory->id) . '" data-content="' . trans('admin/accessories/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($accessory->name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
             }
             $actions .= '</nobr>';
             $company = $accessory->company;
@@ -507,7 +507,7 @@ class ManufacturersController extends Controller
             }
             if (Gate::allows('consumables.delete')) {
                 $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/consumable',
-                        $consumable->id) . '" data-content="' . trans('admin/consumables/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($consumable->name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                        $consumable->id) . '" data-content="' . trans('admin/consumables/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($consumable->name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
             }
 
             $actions .='</nobr>';

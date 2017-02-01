@@ -988,7 +988,7 @@ class UsersController extends Controller
                     if (Gate::allows('users.delete')) {
                         if ((Auth::user()->id !== $user->id) && (!config('app.lock_passwords'))) {
                             $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="' . route('delete/user',
-                                    $user->id) . '" data-content="Are you sure you wish to delete this user?" data-title="Delete ' . htmlspecialchars($user->first_name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a> ';
+                                    $user->id) . '" data-content="آیا از حذف این کاربر اطمینان دارید؟" data-title="حذف ' . htmlspecialchars($user->first_name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a> ';
                         } else {
                             $actions .= ' <span class="btn delete-asset btn-danger btn-sm disabled"><i class="fa fa-trash icon-white"></i></span>';
                         }

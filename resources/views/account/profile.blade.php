@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-        <!-- Language -->
+        <!-- Language
           <div class="form-group {{ $errors->has('locale') ? 'has-error' : '' }}">
               <label class="col-md-3 control-label" for="locale">{{ trans('general.language') }}</label>
               <div class="col-md-9">
@@ -68,16 +68,16 @@
             </div>
         </div>
 
-        <!-- Gravatar Email -->
+        <!-- Gravatar Email 
         <div class="form-group {{ $errors->has('gravatar') ? ' has-error' : '' }}">
             <label for="gravatar" class="col-md-3 control-label">{{ trans('general.gravatar_email') }}
              <small> - شخصی </small></label>
             <div class="col-md-5">
                 <input class="form-control" type="text" name="gravatar" id="gravatar" value="{{ Input::old('gravatar', $user->gravatar) }}" />
                 {!! $errors->first('gravatar', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
-                <!-- <p><img src="" width="30" height="30" />
-                <a href=""><small>Change your avatar at Gravatar.com</small></a>.
-            </p> -->
+                 <p><img src="" width="30" height="30" />
+                <a href=""><small>تعویض آواتار</small></a>.
+            </p> 
             </div>
         </div>
 

@@ -998,7 +998,7 @@ class LicensesController extends Controller
             if (Gate::allows('licenses.delete')) {
                 $actions .= '<a data-html="false" class="btn delete-asset btn-danger btn-sm" data-toggle="modal" href="'
                  . route('delete/license', $license->id)
-                 . '" data-content="' . trans('admin/licenses/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($license->name) . '?" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
+                 . '" data-content="' . trans('admin/licenses/message.delete.confirm') . '" data-title="' . trans('general.delete') . ' ' . htmlspecialchars($license->name) . '؟" onClick="return false;"><i class="fa fa-trash icon-white"></i></a>';
             }
             $actions .='</span>';
 

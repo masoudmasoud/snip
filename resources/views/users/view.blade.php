@@ -10,7 +10,7 @@
 @section('content')
 <?php 
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/snipe/resources/convertdate.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
 
 
  ?>	

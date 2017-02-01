@@ -23,8 +23,8 @@ Bulk Checkin &amp; Delete
             <div class="col-md-12">
                 <div class="callout callout-danger">
                     <i class="fa fa-exclamation-circle"></i>
-                    <strong>WARNING: </strong>
-                    You are about to delete the {{ count($users) }} user(s) listed below. Super admin names are highlighted in red.
+                    <strong>هشدار: </strong>
+                    شمادر حال حذف {{ count($users) }} کاربر زیر هستید. کاربران مدیر با رنگ قرمز مشخص شده اند.
                 </div>
             </div>
 
@@ -43,18 +43,18 @@ Bulk Checkin &amp; Delete
                           <thead>
                               <tr>
                                   <th class="col-md-1"></th>
-                                  <th class="col-md-6">Name</th>
-                                  <th class="col-md-5">Groups</th>
-                                  <th class="col-md-5">Assets</th>
-                                  <th class="col-md-5">Accessories</th>
-                                  <th class="col-md-5">Licenses</th>
+                                  <th class="col-md-6">نام</th>
+                                  <th class="col-md-5">گروه ها</th>
+                                  <th class="col-md-5">دارایی ها</th>
+                                  <th class="col-md-5">لوازم جانبی</th>
+                                  <th class="col-md-5">گواهی نامه ها</th>
                               </tr>
                           </thead>
                           <tfoot>
                               <tr>
                                   <td colspan="6" class="warning">
                                       {{ Form::select('status_id', $statuslabel_list , Input::old('status_id'), array('class'=>'select2', 'style'=>'width:250px')) }}
-                                      <label>Update all assets for these users to this status</label>
+                                      <label>دارایی های این کاربران را به این وضعیت به روز رسانی کنید.</label>
                               </td>
                               </tr>
                               <tr>

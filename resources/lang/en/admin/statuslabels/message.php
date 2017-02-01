@@ -2,24 +2,24 @@
 
 return array(
 
-    'does_not_exist' => 'Status Label does not exist.',
-    'assoc_assets'	 => 'This Status Label is currently associated with at least one Asset and cannot be deleted. Please update your assets to no longer reference this status and try again. ',
+    'does_not_exist' => 'برچسب وضعیت وجود ندارد',
+    'assoc_assets'	 => 'این وضعیت برچسب در حال حاضر با حداقل یک دارایی در ارتباط است و نمی تواند حذف شود. لطفا دارایی های خود را به روز رسانی کنید تا دیگر به این وضعیت برگشت نکنید و دوباره امتحان کنید.',
 
 
     'create' => array(
-        'error'   => 'Status Label was not created, please try again.',
-        'success' => 'Status Label created successfully.'
+        'error'   => 'برچسب وضعیت ایجاد نشد. لطفا دوباره امتحان کنید',
+        'success' => 'برچسب وضعیت با موفقیت ایجاد شد.'
     ),
 
     'update' => array(
-        'error'   => 'Status Label was not updated, please try again',
-        'success' => 'Status Label updated successfully.'
+        'error'   => 'برچسب وضعیت بروز رسانی نشد. لطفا دوباره امتحان کنید',
+        'success' => 'برچسب وضعیت با موفقیت بروز رسانی شد.'
     ),
 
     'delete' => array(
-        'confirm'   => 'Are you sure you wish to delete this Status Label?',
-        'error'   => 'There was an issue deleting the Status Label. Please try again.',
-        'success' => 'The Status Label was deleted successfully.'
+        'confirm'   => 'آیا از حذف برچسب وضعیت اطمینان دارید؟',
+        'error'   => 'مشکلی برای حذف برچسب وضعیت وجود دارد. لطفا دوباره امتحان کنید.',
+        'success' => 'برچسب وضعیت با موفقیت حذف شد.'
     )
 
 );

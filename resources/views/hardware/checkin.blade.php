@@ -8,7 +8,12 @@
 
 {{-- Page content --}}
 @section('content')
+<?php 
 
+include_once($_SERVER['DOCUMENT_ROOT'].'/jdf.php');
+
+
+ ?>	
 
 <style>
 
@@ -80,7 +85,7 @@
 
           <div class="col-md-8">
             <div class="col-md-4 input-group required">
-            <input type="date" class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="Checkin Date" name="checkin_at" id="checkin_at" value="{{ Input::old('checkin_at', date('Y-m-d')) }}">
+            <input class="datepicker form-control" data-date-format="yyyy-mm-dd" placeholder="تاریخ" name="checkin_at" id="checkin_at" value="{{ Input::old('checkin_at', jdate('Y-m-d')) }}">
             <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
           </div>
             {!! $errors->first('checkin_at', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}

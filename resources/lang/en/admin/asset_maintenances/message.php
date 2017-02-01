@@ -1,17 +1,17 @@
 <?php
 
     return [
-        'not_found'                    => 'Asset Maintenance you were looking for was not found!',
+        'not_found'                    => 'نگهدارنده ای که جستجو میکنید یافت نشد',
         'delete'                       => [
-            'confirm' => 'Are you sure you wish to delete this asset maintenance?',
-            'error'   => 'There was an issue deleting the asset maintenance. Please try again.',
-            'success' => 'The asset maintenance was deleted successfully.'
+            'confirm' => 'آیا مطمئن هستید می خواهید این وسیله حذف شود؟',
+            'error'   => 'اشکال در حذف نگهداشت دارایی.لطفا دوباره امتحان کنید.',
+            'success' => 'نگهدارنده دارایی با موفقیت حذف شد.'
         ],
         'create'                       => [
-            'error'   => 'Asset Maintenance was not created, please try again.',
-            'success' => 'Asset Maintenance created successfully.'
+            'error'   => 'نگهداشت دارایی ایجاد نشد.لطفا دوباره امتحان کنید',
+            'success' => 'نگهدارنده دارایی با موفقیت ایجاد شد.'
         ],
-        'asset_maintenance_incomplete' => 'Not Completed Yet',
-        'warranty'                     => 'Warranty',
-        'not_warranty'                 => 'Not Warranty',
+        'asset_maintenance_incomplete' => 'هنوز تکمیل نشده',
+        'warranty'                     => 'ضمانت',
+        'not_warranty'                 => 'بدون ضمانت',
     ];

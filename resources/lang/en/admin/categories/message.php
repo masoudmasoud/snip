@@ -2,24 +2,24 @@
 
 return array(
 
-    'does_not_exist' => 'Category does not exist.',
-    'assoc_models'	 => 'This category is currently associated with at least one model and cannot be deleted. Please update your models to no longer reference this category and try again. ',
-    'assoc_items'	 => 'This category is currently associated with at least one :asset_type and cannot be deleted. Please update your :asset_type  to no longer reference this category and try again. ',
+    'does_not_exist' => 'دسته بندی موجود نیست.',
+    'assoc_models'	 => 'این گروه در حال حاضر همراه با حداقل یک مدل است و قادر به حذف نمی شود. لطفا بروز مدل های خود را به دیگر مرجع این رده و دوباره امتحان کنید. ',
+    'assoc_items'	 => 'این گروه در حال حاضر همراه با حداقل یکی است: asset_type و قادر به حذف نمی شود. لطفا به روز رسانی خود را: asset_type دیگر این گروه مرجع و دوباره امتحان کنید. ',
 
     'create' => array(
-        'error'   => 'Category was not created, please try again.',
-        'success' => 'Category created successfully.'
+        'error'   => 'دسته ایجاد نشد ،دوباره امتحان کنید.',
+        'success' => 'دسته با موفقیت ایجاد شد.'
     ),
 
     'update' => array(
-        'error'   => 'Category was not updated, please try again',
-        'success' => 'Category updated successfully.'
+        'error'   => 'دسته بندی به روزرسانی نشد.لطفا دوباره تلاش کنید.',
+        'success' => 'دسته بندی با موفقیت به روزرسانی شد.'
     ),
 
     'delete' => array(
-        'confirm'   => 'Are you sure you wish to delete this category?',
-        'error'   => 'There was an issue deleting the category. Please try again.',
-        'success' => 'The category was deleted successfully.'
+        'confirm'   => 'آیا از حذف این دسته بندی اطمینان دارید؟',
+        'error'   => 'اشکال در حذف دسته بندی.لطفا دوباره تلاش کنید.',
+        'success' => 'دسته بندی با موفقیت حذف شد.'
     )
 
 );
