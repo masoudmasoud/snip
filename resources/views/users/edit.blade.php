@@ -93,7 +93,7 @@
               <label class="col-md-3 control-label" for="first_name">{{ trans('general.first_name') }}</label>
               <div class="col-md-8{{  (\App\Helpers\Helper::checkIfRequired($user, 'first_name')) ? ' required' : '' }}">
                 <input class="form-control" type="text" name="first_name" id="first_name" value="{{ Input::old('first_name', $user->first_name) }}" />
-                {!! $errors->first('first_name', '<span class="alert-msg">:message</span>') !!}
+                {!! $errors->first('first_name', '<span class="alert-msg">پیام: </span>') !!}
               </div>
           </div>
 
@@ -102,7 +102,7 @@
             <label class="col-md-3 control-label" for="last_name">{{ trans('general.last_name') }} </label>
             <div class="col-md-8{{  (\App\Helpers\Helper::checkIfRequired($user, 'last_name')) ? ' required' : '' }}">
               <input class="form-control" type="text" name="last_name" id="last_name" value="{{ Input::old('last_name', $user->last_name) }}" />
-              {!! $errors->first('last_name', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('last_name', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -129,7 +129,7 @@
                 (Managed via LDAP)
               @endif
 
-              {!! $errors->first('username', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('username', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -155,7 +155,7 @@
                 (Managed via LDAP)
               @endif
               <span id="generated-password"></span>
-              {!! $errors->first('password', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('password', '<span class="alert-msg">پیام: </span>') !!}
             </div>
             <div class="col-md-4">
               @if ($user->ldap_import!='1')
@@ -183,7 +183,7 @@
               @if (config('app.lock_passwords') && ($user->id))
               <p class="help-block">{{ trans('admin/users/table.lock_passwords') }}</p>
               @endif
-              {!! $errors->first('password_confirm', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('password_confirm', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
           @endif
@@ -206,7 +206,7 @@
               @if (config('app.lock_passwords') && ($user->id))
               <p class="help-block">{{ trans('admin/users/table.lock_passwords') }}</p>
               @endif
-              {!! $errors->first('email', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('email', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -219,7 +219,7 @@
             </div>
             <div class="col-md-8">
               {{ Form::select('company_id', $company_list , Input::old('company_id', $user->company_id), array('class'=>'select2', 'style'=>'width:350px')) }}
-              {!! $errors->first('company_id', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('company_id', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
           @endif
@@ -229,7 +229,7 @@
             <label class="col-md-3 control-label" for="locale">{{ trans('general.language') }}</label>
             <div class="col-md-8">
               {!! Form::locales('locale', Input::old('locale', $user->locale), 'select2') !!}
-              {!! $errors->first('locale', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('locale', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -244,7 +244,7 @@
                 id="employee_num"
                 value="{{ Input::old('employee_num', $user->employee_num) }}"
               />
-              {!! $errors->first('employee_num', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('employee_num', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -260,7 +260,7 @@
                 id="jobtitle"
                 value="{{ Input::old('jobtitle', $user->jobtitle) }}"
               />
-              {!! $errors->first('jobtitle', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('jobtitle', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -270,7 +270,7 @@
             <label class="col-md-3 control-label" for="manager_id">{{ trans('admin/users/table.manager') }}</label>
             <div class="col-md-8">
               {{ Form::select('manager_id', $manager_list , Input::old('manager_id', $user->manager_id), array('class'=>'select2', 'style'=>'width:350px')) }}
-              {!! $errors->first('manager_id', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('manager_id', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -280,7 +280,7 @@
             </label>
             <div class="col-md-8">
               {{ Form::select('location_id', $location_list , Input::old('location_id', $user->location_id), array('class'=>'select2', 'style'=>'width:350px')) }}
-              {!! $errors->first('location_id', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('location_id', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -289,7 +289,7 @@
             <label class="col-md-3 control-label" for="phone">{{ trans('admin/users/table.phone') }}</label>
             <div class="col-md-4">
               <input class="form-control" type="text" name="phone" id="phone" value="{{ Input::old('phone', $user->phone) }}" />
-              {!! $errors->first('phone', '<span class="alert-msg">:message</span>') !!}
+              {!! $errors->first('phone', '<span class="alert-msg">پیام: </span>') !!}
             </div>
           </div>
 
@@ -313,7 +313,7 @@
                 @endif
 
                 </select>
-                {!! $errors->first('activated', '<span class="alert-msg">:message</span>') !!}
+                {!! $errors->first('activated', '<span class="alert-msg">پیام: </span>') !!}
               </div>
             </div>
           </div>
@@ -360,7 +360,7 @@
             <label for="notes" class="col-md-3 control-label">{{ trans('admin/users/table.notes') }}</label>
             <div class="col-md-8">
               <textarea class="form-control" id="notes" name="notes">{{ Input::old('notes', $user->notes) }}</textarea>
-              {!! $errors->first('notes', '<span class="alert-msg"><i class="fa fa-times"></i> :message</span>') !!}
+              {!! $errors->first('notes', '<span class="alert-msg"><i class="fa fa-times"></i>پیام: </span>') !!}
             </div>
           </div>
 
