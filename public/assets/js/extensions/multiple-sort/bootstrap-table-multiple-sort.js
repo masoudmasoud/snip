@@ -10,8 +10,8 @@
     var isSingleSort = false;
 
     var sort_order = {
-        asc: 'Ascending',
-        desc: 'Descending'
+        asc: 'صعودی',
+        desc: 'نزولی'
     };
 
     var showSortModal = function(that) {
@@ -172,37 +172,37 @@
 
     $.extend($.fn.bootstrapTable.locales, {
         formatMultipleSort: function() {
-            return 'Multiple Sort';
+            return 'مرتب سازی چندگانه';
         },
         formatAddLevel: function() {
-            return "Add Level";
+            return "افزودن ردیف";
         },
         formatDeleteLevel: function() {
-            return "Delete Level";
+            return "حذف ردیف";
         },
         formatColumn: function() {
-            return "Column";
+            return "ستون";
         },
         formatOrder: function() {
-            return "Order";
+            return "ترتیب";
         },
         formatSortBy: function() {
-            return "Sort by";
+            return "مرتب سازی با";
         },
         formatThenBy: function() {
-            return "Then by";
+            return "سپس با";
         },
         formatSort: function() {
-            return "Sort";
+            return "مرتب سازی";
         },
         formatCancel: function() {
-            return "Cancel";
+            return "انصراف";
         },
         formatDuplicateAlertTitle: function() {
-            return "Duplicate(s) detected!";
+            return "حذف تکراری ها! ";
         },
         formatDuplicateAlertDescription: function() {
-            return "Please remove or change any duplicate column.";
+            return "لطفا ستون های تکراری را تغییر دهید یا حذف کنید";
         }
     });
 

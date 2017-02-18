@@ -9,7 +9,7 @@ return array(
     'checkin'  					=> 'کنترل دارایی',
     'checkout'  				=> 'تحویل دارایی به کاربر',
     'clone'  					=> 'دارایی شگرف',
-    'deployable'  				=> 'گسترش',
+    'deployable'  				=> 'قابل استقرار',
     'deleted'  					=> 'این دارایی حذف شده است. <a href="/hardware/:asset_id/restore"> اینجا به بازگرداندن آن کلیک کنید </a>.',
     'edit'  					=> 'ویرایش دارایی',
 	'filetype_info'				=> 'انواع فایل های مجاز عبارتند از PNG، GIF، JPG، JPEG، DOC، DOCX، PDF، TXT، ZIP و RAR.',
@@ -18,7 +18,7 @@ return array(
     'requested'				    => 'درخواست شده',
     'restore'  					=> 'بازیابی دارایی',
     'pending'  					=> 'در انتظار',
-    'undeployable'  			=> 'غیرقابل گسترش',
+    'undeployable'  			=> 'غیر قابل استقرار',
     'view'  					=> 'نمایش دارایی ها
 ',
 );
