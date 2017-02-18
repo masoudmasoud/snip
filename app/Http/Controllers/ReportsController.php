@@ -1,4 +1,5 @@
 <?php
+
 namespace App\Http\Controllers;
 
 use App\Helpers\Helper;
@@ -29,8 +30,11 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
  *
  * @version    v1.0
  */
+ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
+include_once($_SERVER['DOCUMENT_ROOT'].'/jdf.php');
 class ReportsController extends Controller
 {
+
 
     /**
     * Returns a view that displays the accessories report.
@@ -145,6 +149,10 @@ class ReportsController extends Controller
                 }
                 fputcsv($handle, $headers);
 
+ 
+
+
+
                 foreach ($assets as $asset) {
                     // Add a new row with data
                     $values=[
@@ -177,7 +185,7 @@ class ReportsController extends Controller
             fclose($handle);
         }, 200, [
             'Content-Type' => 'text/csv',
-            'Content-Disposition' => 'attachment; filename="assets-'.date('Y-m-d-his').'.csv"',
+            'Content-Disposition' => 'attachment; filename="assets-'.jdate('Y-m-d-his').'.csv"',
         ]);
 
         return $response;
@@ -277,7 +285,7 @@ class ReportsController extends Controller
             $csv->insertOne($row);
         }
 
-        $csv->output('depreciation-report-' . date('Y-m-d') . '.csv');
+        $csv->output('depreciation-report-' . jdate('Y-m-d') . '.csv');
         die;
 
     }
@@ -354,15 +362,15 @@ class ReportsController extends Controller
 
             if (($activity->item) && ($activity->itemType()=="asset")) {
               $activity_item = '<a href="'.route('view/hardware', $activity->item_id).'">'.e($activity->item->asset_tag).' - '. e($activity->item->showAssetName()).'</a>';
-                $item_type = 'asset';
+                $item_type = 'دارایی';
             } elseif ($activity->item) {
                 $activity_item = '<a href="' . route('view/' . $activity->itemType(),
                         $activity->item_id) . '">' . e($activity->item->name) . '</a>';
                 $item_type = $activity->itemType();
 
             } else {
-                $activity_item = "unkonwn";
-                $item_type = "null";
+                $activity_item = "نامعلوم";
+                $item_type = "هیچ";
             }
             
 
@@ -400,7 +408,7 @@ class ReportsController extends Controller
             
             $rows[] = array(
                 'icon'          => $activity_icons,
-                'created_at'    => date("M d, Y g:iA", strtotime($activity->created_at)),
+                'created_at'    => jdate("Y/m/d , g:i A", strtotime($activity->created_at)),
                 'action_type'              => strtolower(trans('general.'.str_replace(' ','_',$activity->action_type))),
                 'admin'         =>  $activity->user ? (string) link_to('/admin/users/'.$activity->user_id.'/view', $activity->user->fullName()) : '',
                 'target'          => $activity_target,
@@ -740,7 +748,7 @@ class ReportsController extends Controller
             $csv      = implode($rows, "\n");
             $response = Response::make($csv, 200);
             $response->header('Content-Type', 'text/csv');
-            $response->header('Content-disposition', 'attachment;filename='.date('Y-m-d-His').'-custom-asset-report.csv');
+            $response->header('Content-disposition', 'attachment;filename='.jdate('Y-m-d-His').'-custom-asset-report.csv');
 
             return $response;
         } else {

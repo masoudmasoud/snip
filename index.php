@@ -1,10 +1,20 @@
 <!DOCTYPE html>
+
+
+<?php
+/* This will give an error. Note the output
+ * above, which is before the header() call */
+header('Location: ./public');
+exit;
+?>
+
+
 <html>
     <head>
       <title>
-         Snipe-IT Setup
+         مدیریت دارایی های فناوری اطلاعات
       </title>
-
+		
 
         <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet" type="text/css">
 
@@ -45,8 +55,9 @@
     <body>
           <div class="container">
               <div class="row">
-                  <div class="col-lg-11 col-lg-offset-1">
-                        <h1>D'oh. If you're seeing this, your DocumentRoot is set incorrectly. It should be set to the <code>public</code> directory.
+                  <div class="center">
+                        <a href="./public">برای ورود به سیستم کلیک کنید</a>
+						
                   </div>
               </div>
           </div>

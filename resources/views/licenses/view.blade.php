@@ -64,7 +64,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
                         @foreach ($license->licenseseats as $licensedto)
 
                         <tr>
-                            <td>Seat {{ $count }} </td>
+                            <td>کاربر/دستگاه {{ $count }} </td>
                             <td>
 
                                 @if (($licensedto->user) && ($licensedto->deleted_at == NULL))
@@ -289,7 +289,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
                       {{ trans('admin/licenses/form.reassignable') }}:
                       </td>
                       <td>
-                        {{ $license->reassignable ? 'Yes' : 'No' }}
+                        {{ $license->reassignable ? 'بله' : 'خیر' }}
                       </td>
                     </tr>
 

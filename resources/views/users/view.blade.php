@@ -8,12 +8,9 @@
 
 {{-- Page content --}}
 @section('content')
-<?php 
 
-include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
+<?php include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php'); ?>	
 
-
- ?>	
 <div class="row">
     <div class="col-md-12">
 
@@ -205,7 +202,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
 
                       <td class="hidden-print">
                           @can('assets.edit')
-                              <a href="{{ route('checkin/hardware', array('assetId'=> $asset->id, 'backto'=>'user')) }}" class="btn btn-primary btn-sm">Checkin</a>
+                              <a href="{{ route('checkin/hardware', array('assetId'=> $asset->id, 'backto'=>'user')) }}" class="btn btn-primary btn-sm">تحویل گرفتن</a>
                           @endcan
                       </td>
                     </tr>
@@ -234,7 +231,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
                     <td><a href="{{ route('view/license', $license->id) }}">{{ mb_strimwidth($license->serial, 0, 50, "...") }}</a></td>
                     <td class="hidden-print">
                         @can('licenses.edit')
-                            <a href="{{ route('checkin/license', array('licenseseat_id'=> $license->pivot->id, 'backto'=>'user')) }}" class="btn btn-primary btn-sm">Checkin</a>
+                            <a href="{{ route('checkin/license', array('licenseseat_id'=> $license->pivot->id, 'backto'=>'user')) }}" class="btn btn-primary btn-sm">تحویل گرفتن</a>
                          @endcan
                     </td>
                   </tr>
@@ -258,7 +255,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
                         <td><a href="{{ route('view/accessory', $accessory->id) }}">{{ $accessory->name }}</a></td>
                         <td class="hidden-print">
                             @can('accessories.edit')
-                                <a href="{{ route('checkin/accessory', array('accessory_id'=> $accessory->pivot->id, 'backto'=>'user')) }}" class="btn btn-primary btn-sm">Checkin</a>
+                                <a href="{{ route('checkin/accessory', array('accessory_id'=> $accessory->pivot->id, 'backto'=>'user')) }}" class="btn btn-primary btn-sm">تحویل گرفتن</a>
                             @endcan
                         </td>
                     </tr>
@@ -298,7 +295,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
                 @can('users.edit')
                     <span class="btn btn-info fileinput-button">
                     <i class="fa fa-plus icon-white"></i>
-                    <span>Select File...</span>
+                    <span>انتخاب فایل ...</span>
                     <!-- The file input field used as target for the file upload widget -->
                     <input id="fileupload" type="file" name="file[]" data-url="{{ config('app.url') }}/api/users/{{ $user->id }}/upload">
 

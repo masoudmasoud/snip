@@ -279,7 +279,7 @@ class Helper
      */
     public static function depreciationList()
     {
-        $depreciation_list = ['' => 'Do Not Depreciate'] + Depreciation::orderBy('name', 'asc')
+        $depreciation_list = ['' => 'مستهلک نکردن'] + Depreciation::orderBy('name', 'asc')
                 ->pluck('name', 'id')->toArray();
         return $depreciation_list;
     }

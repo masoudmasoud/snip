@@ -684,7 +684,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdfconvert.php');
             'files' => true, 'class' => 'form-horizontal' ]) }}
 
             <div class="col-md-2">
-              <span class="btn btn-default btn-file">Browse for file...
+              <span class="btn btn-default btn-file">انتخاب فایل ...
                   {{ Form::file('assetfile[]', ['multiple' => 'multiple']) }}
               </span>
             </div>

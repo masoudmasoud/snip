@@ -3,7 +3,7 @@
 return array(
 
     'id'      => 'شناسه',
-    'months'   => 'ماه ها',
+    'months'   => 'ماه',
     'term'   => 'مدت زمان',
     'title'      => 'نام ',
 

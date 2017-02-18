@@ -3,14 +3,14 @@
 return array(
 
     'asset_tag'   	=> 'برچسب دارایی',
-    'asset_model'       => 'مدل',
+    'asset_model'   => 'مدل',
     'book_value'  	=> 'عنوان آیتم',
-    'change' 		=> '/ خارج',
-    'checkout_date' => 'چک کردن تاریخ',
-    'checkoutto' 	=> 'قفل شده',
+    'change' 		=> 'ورود/خروج دارایی',
+    'checkout_date' => 'تاریخ تحویل دادن',
+    'checkoutto' 	=> 'تحویل داده شده',
     'diff' 			=> 'دیف',
     'dl_csv' 		=> 'دانلود CSV',
-    'eol' 			=> 'EOL',
+    'eol' 			=> 'تاریخ انقضا',
     'id'      		=> 'شناسه',
     'location' 		=> 'مکان',
     'purchase_cost'	=> 'هزینه',
@@ -18,7 +18,7 @@ return array(
     'serial'   		=> 'سریال',
     'status'   		=> 'وضعیت',
     'title'      	=> 'دارایی ',
-    'image'		=> 'دستگاه تصویر
+    'image'		=> 'تصویر دستگاه
 ',
     'days_without_acceptance' => 'روز بدون پذیرش'
 

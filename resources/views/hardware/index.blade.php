@@ -3,6 +3,7 @@
 @section('title0')
 
     @if (Input::get('status'))
+		{{ trans('general.assets') }}ی
         @if (Input::get('status')=='Pending')
             {{ trans('general.pending') }}
         @elseif (Input::get('status')=='RTD')
@@ -20,9 +21,10 @@
         @endif
     @else
             {{ trans('general.all') }}
+			{{ trans('general.assets') }}
     @endif
 
-    {{ trans('general.assets') }}
+    
 @stop
 
 {{-- Page title --}}

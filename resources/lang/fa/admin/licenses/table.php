@@ -10,7 +10,7 @@ return array(
 ',
     'purchase_date'   	=> 'تاریخ خرید',
     'purchased'   		=> 'خریداری شده',
-    'seats'   			=> 'صندلی',
+    'seats'   			=> 'تعداد کاربر/دستگاه',
     'hardware'   		=> 'سخت‌افزار',
     'serial'   			=> 'سریال',
     'title'      		=> 'توافق‌نامه',

@@ -190,7 +190,7 @@ $(function () {
     select=link.data("select");
 
     var modal = $(this);
-    modal.find('.modal-title').text('Add a new ' + model);
+    modal.find('.modal-title').text(' بستن');
 
     $('.dynamic-form-row').hide();
     function show_er(selector) {
@@ -387,7 +387,7 @@ $(function () {
     }).fail(function (result) {
       //console.dir(result.responseJSON);
       msg=result.responseJSON.error.message || result.responseJSON.error;
-      window.alert("Unable to add new "+model+" - error: "+msg);
+      window.alert("ناتوان در افزودن "+model+" - پیام: "+msg);
     });
 
   });

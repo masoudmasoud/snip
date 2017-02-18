@@ -41,10 +41,10 @@
                     <div class="col-md-8 col-xs-12 required"><input type='text' id='modal-city' class="form-control"></div>
                 </div>
 
-                <div class="dynamic-form-row">
+             <!--   <div class="dynamic-form-row">
                     <div class="col-md-4 col-xs-12 country"><label for="modal-country">{{ trans('general.country') }}:</label></div>
                     <div class="col-md-8 col-xs-12">{!! Form::countries('country', Input::old('country'), 'select2 country',"modal-country") !!}</div>
-                </div>
+                </div> -->
 
                 <div class="dynamic-form-row">
                     <div class="col-md-4 col-xs-12"><label for="modal-fieldset_id">{{ trans('admin/models/general.fieldset') }}:</label></div>

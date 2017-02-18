@@ -2,9 +2,9 @@
 
 {{-- Page title --}}
 @section('title')
-
- {{ $consumable->name }}
  {{ trans('general.consumable') }}
+ {{ $consumable->name }}
+
 @parent
 @stop
 

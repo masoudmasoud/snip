@@ -3,8 +3,9 @@
 {{-- Page title --}}
 @section('title')
 
- {{ $location->name }}
  {{ trans('general.location') }}
+ {{ $location->name }}
+
 @parent
 @stop
 

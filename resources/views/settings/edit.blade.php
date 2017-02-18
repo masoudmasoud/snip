@@ -164,7 +164,7 @@
                     {{ Form::label('default_currency', trans('admin/settings/general.default_currency')) }}
                   </div>
                   <div class="col-md-9">
-                    {{ Form::text('default_currency', Input::old('default_currency', $setting->default_currency), array('class' => 'form-control','placeholder' => 'USD', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
+                    {{ Form::text('default_currency', Input::old('default_currency', $setting->default_currency), array('class' => 'form-control','placeholder' => 'IRR', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
                     {!! $errors->first('default_currency', '<span class="alert-msg">پیام: </span>') !!}
                   </div>
                 </div>

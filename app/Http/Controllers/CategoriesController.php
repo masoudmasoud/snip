@@ -117,7 +117,7 @@ class CategoriesController extends Controller
         // Show the page
         //$category_options = array('' => 'Top Level') + Category::lists('name', 'id');
 
-        $category_options = array('' => 'Top Level') + DB::table('categories')->where('id', '!=', $categoryId)->lists('name', 'id');
+        $category_options = array('' => 'سطح اول') + DB::table('categories')->where('id', '!=', $categoryId)->lists('name', 'id');
         $category_types= Helper::categoryTypeList();
 
         return View::make('categories/edit', compact('item'))

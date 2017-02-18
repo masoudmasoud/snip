@@ -2,7 +2,7 @@
 
 return [
     'send_password_link'	        => 'ارسال لینک بازنشانی کلمه عبور',
-    'email_reset_password'			=> 'پست الکترونیکی کلمه عبور بازنشانی شده',
+    'email_reset_password'			=> 'ارسال کلمه عبور بازنشانی شده',
     'reset_password'			    => 'بازنشانی گذرواژه',
     'login'                         => 'ورود',
     'login_prompt'                  => 'لطفا وارد شوید',

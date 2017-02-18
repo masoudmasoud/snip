@@ -57,7 +57,7 @@ class LocationsController extends Controller
 
         $location_options_array = Location::getLocationHierarchy($locations);
         $location_options = Location::flattenLocationsArray($location_options_array);
-        $location_options = array('' => 'Top Level') + $location_options;
+        $location_options = array('' => 'سطح اول') + $location_options;
 
         return View::make('locations/edit')
         ->with('location_options', $location_options)
@@ -167,7 +167,7 @@ class LocationsController extends Controller
         $locations = Location::orderBy('name', 'ASC')->get();
         $location_options_array = Location::getLocationHierarchy($locations);
         $location_options = Location::flattenLocationsArray($location_options_array);
-        $location_options = array('' => 'Top Level') + $location_options;
+        $location_options = array('' => 'سطح اول') + $location_options;
 
         return View::make('locations/edit', compact('item'))->with('location_options', $location_options);
     }

@@ -17,10 +17,7 @@
 </style>
 
 <?php 
-
 include_once($_SERVER['DOCUMENT_ROOT'].'/jdf.php');
-
-
  ?>	
 <div class="row">
 
@@ -192,7 +189,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdf.php');
             model=link.data("dependency");
             select=link.data("select");
             var modal = $(this);
-            modal.find('.modal-title').text('Add a new ' + model);
+            modal.find('.modal-title').text(' بستن');
             $('.dynamic-form-row').hide();
             function show_er(selector) {
                 $(selector).parent().parent().show();

@@ -207,7 +207,7 @@ class LicensesController extends Controller
         }
 
         // Show the page
-        $license_options = array('' => 'Top Level') + DB::table('assets')->where('id', '!=', $licenseId)->pluck('name', 'id');
+        $license_options = array('' => 'سطح اول') + DB::table('assets')->where('id', '!=', $licenseId)->pluck('name', 'id');
         $maintained_list = array('' => 'Maintained', '1' => 'Yes', '0' => 'No');
 
         return View::make('licenses/edit', compact('item'))
@@ -774,7 +774,7 @@ class LicensesController extends Controller
         }
 
           // Show the page
-        $license_options = array('0' => 'Top Level') + License::pluck('name', 'id')->toArray();
+        $license_options = array('0' => 'سطح اول') + License::pluck('name', 'id')->toArray();
         $maintained_list = array('' => 'Maintained', '1' => 'Yes', '0' => 'No');
         $company_list = Helper::companyList();
         //clone the orig

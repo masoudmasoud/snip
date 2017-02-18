@@ -2,9 +2,9 @@
 
 {{-- Page title --}}
 @section('title')
-
- {{ $category->name }}
  {{ trans('general.assets') }}
+ {{ $category->name }}
+
 @parent
 @stop
 

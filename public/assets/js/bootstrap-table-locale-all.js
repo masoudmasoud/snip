@@ -295,7 +295,7 @@
             return 'Search';
         },
         formatNoMatches: function () {
-            return 'No matching records found';
+            return 'موردی یافت نشد.';
         },
         formatPaginationSwitch: function () {
             return 'Hide/Show pagination';

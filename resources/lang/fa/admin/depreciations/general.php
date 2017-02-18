@@ -6,7 +6,7 @@ return array(
     'asset_depreciations'  					=> 'استهلاک دارایی',
     'create'  					            => 'ایجاد استهلاک',
     'depreciation_name'  					=> 'نام استهلاک',
-    'number_of_months'  					=> 'تعداد ماه ها',
+    'number_of_months'  					=> 'تعداد ماه',
     'update'  					            => 'بروز رسانی استهلاک',
 
 );

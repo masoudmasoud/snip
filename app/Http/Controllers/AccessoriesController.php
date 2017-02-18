@@ -659,7 +659,7 @@ class AccessoriesController extends Controller
             $actions = '';
             if (Gate::allows('accessories.checkin')) {
                 $actions .= '<a href="' . route('checkin/accessory',
-                        $user->pivot->id) . '" class="btn btn-info btn-sm">Checkin</a>';
+                        $user->pivot->id) . '" class="btn btn-info btn-sm">تحویل دادن</a>';
             }
 
             if (Gate::allows('users.view')) {

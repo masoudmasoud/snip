@@ -68,6 +68,18 @@
         clear: none;
       }
     }
+	
+	 @font-face {
+    font-family: 'samim';
+    src: url('../fonts/samim.eot');
+    src: url('../fonts/samim.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/samim.woff') format('woff'),
+         url('../fonts/samim.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+	
+	
     </style>
 
     <script>
@@ -245,7 +257,7 @@
                    @endif
                  </a>
                  <ul class="dropdown-menu">
-                   <li class="header">You have {{ count($alert_items) }} items below or almost below minimum quantity levels</li>
+                   <li class="header"> {{ count($alert_items) }} مورد زیر دارای تعدادی کمتر از حداقل تعداد را دارند.</li>
                    <li>
                      <!-- inner menu: contains the actual data -->
                      <ul class="menu">
@@ -256,7 +268,7 @@
                           <a href="{{ config('app.url') }}/admin/{{ $alert_items[$i]['type'] }}/{{ $alert_items[$i]['id'] }}/view">
                             <h3>{{ $alert_items[$i]['name'] }}
                               <small class="pull-right">
-                                {{ $alert_items[$i]['remaining'] }} remaining
+                                {{ $alert_items[$i]['remaining'] }} بافی مانده
                               </small>
                             </h3>
                             <div class="progress xs">
@@ -357,6 +369,7 @@
                                <i class="fa fa-globe fa-fw"></i> @lang('general.locations')
                            </a>
                        </li>
+					   <!--
                        <li {!! (Request::is('admin/groups*') ? ' class="active"' : '') !!}>
                            <a href="{{ URL::to('admin/groups') }}">
                                <i class="fa fa-group fa-fw"></i> @lang('general.groups')
@@ -377,7 +390,7 @@
                            <a href="{{ route('app') }}">
                                <i class="fa fa-cog fa-fw"></i> @lang('general.settings')
                            </a>
-                       </li>
+                       </li> -->
                    </ul>
                </li>
                @endcan

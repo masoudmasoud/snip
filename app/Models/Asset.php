@@ -200,7 +200,7 @@ class Asset extends Depreciable
         if ($this->assignedUser) {
             $user_name = $this->assignedUser->fullName();
         } else {
-            $user_name = "Unassigned";
+            $user_name = "محول نشده";
         }
         return $this->asset_tag . ' - ' . $this->name . ' (' . $user_name . ') ' . $this->model->name;
     }

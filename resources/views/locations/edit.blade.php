@@ -26,7 +26,7 @@
         {{ trans('admin/locations/table.currency') }}
     </label>
     <div class="col-md-9{{  (\App\Helpers\Helper::checkIfRequired($item, 'currency')) ? ' required' : '' }}">
-        {{ Form::text('currency', Input::old('currency', $item->currency), array('class' => 'form-control','placeholder' => 'USD', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
+        {{ Form::text('currency', Input::old('currency', $item->currency), array('class' => 'form-control','placeholder' => 'IRR', 'maxlength'=>'3', 'style'=>'width: 60px;')) }}
         {!! $errors->first('currency', '<span class="alert-msg">پیام: </span>') !!}
     </div>
 </div>

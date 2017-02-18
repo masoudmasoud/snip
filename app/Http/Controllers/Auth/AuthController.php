@@ -191,7 +191,7 @@ class AuthController extends Controller
     {
 
         if (!Auth::check()) {
-            return redirect()->route('login')->with('error', 'You must be logged in.');
+            return redirect()->route('login')->with('error', 'شما باید وارد شوید.');
         }
 
         $user = Auth::user();
@@ -231,7 +231,7 @@ class AuthController extends Controller
     public function postTwoFactorAuth(Request $request) {
 
         if (!Auth::check()) {
-            return redirect()->route('login')->with('error', 'You must be logged in.');
+            return redirect()->route('login')->with('error', 'شما باید وارد شوید.');
         }
 
         $user = Auth::user();
@@ -243,7 +243,7 @@ class AuthController extends Controller
             $user->two_factor_enrolled = 1;
             $user->save();
             $request->session()->put('2fa_authed', 'true');
-            return redirect()->route('home')->with('success', 'You are logged in!');
+            return redirect()->route('home')->with('success', 'شما وارد شده اید.');
         }
 
         return redirect()->route('two-factor')->with('error', 'Invalid two-factor code');
@@ -261,7 +261,7 @@ class AuthController extends Controller
     {
         $request->session()->forget('2fa_authed');
         Auth::logout();
-        return redirect()->route('login')->with('success', 'You have successfully logged out!');
+        return redirect()->route('login')->with('success', 'شما با موفقیت خارچ شده اید.');
     }
 
 

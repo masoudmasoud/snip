@@ -9,7 +9,7 @@ return array(
     'license_key'       => 'Product Key',
     'maintained'        => 'Maintained',
     'name'              => 'Software Name',
-    'no_depreciation'   => 'Do Not Depreciate',
+    'no_depreciation'   => 'مستهلک نکردن',
     'purchase_order'    => 'Purchase Order Number',
     'reassignable'      => 'Reassignable',
     'remaining_seats'   => 'Remaining Seats',

@@ -2,13 +2,13 @@
 
 {{-- Page title --}}
 @section('title')
-
+ {{ trans('general.users') }}
 @if (Input::get('status')=='deleted')
     {{ trans('general.deleted') }}
 @else
     {{ trans('general.current') }}
 @endif
- {{ trans('general.users') }}
+
 
 
 @parent

@@ -36,16 +36,10 @@
                 <th data-searchable="false" data-sortable="false" data-field="assets_checkedout">{{ trans('admin/locations/table.assets_checkedout') }}</th>
                 <th data-searchable="true" data-sortable="true" data-field="currency">{{ App\Models\Setting::first()->default_currency }}</th>
                 <th data-searchable="true" data-sortable="true" data-field="address">{{ trans('admin/locations/table.address') }}</th>
-                <th data-searchable="true" data-sortable="true" data-field="city">{{ trans('admin/locations/table.city') }}
-                </th>
-                <th data-searchable="true" data-sortable="true" data-field="state">
-                 {{ trans('admin/locations/table.state') }}
-                </th>
-                  <th data-searchable="true" data-sortable="true" data-field="zip">
-                      {{ trans('admin/locations/table.zip') }}
-                  </th>
-                <th data-searchable="true" data-sortable="true" data-field="country">
-                {{ trans('admin/locations/table.country') }}</th>
+                <th data-searchable="true" data-sortable="true" data-field="city">{{ trans('admin/locations/table.city') }} </th>
+                <th data-searchable="true" data-sortable="true" data-field="state"> {{ trans('admin/locations/table.state') }}  </th>
+                <th data-searchable="true" data-sortable="true" data-field="zip"> {{ trans('admin/locations/table.zip') }} </th>
+            <!--    <th data-searchable="true" data-sortable="true" data-field="country"> {{ trans('admin/locations/table.country') }}</th> -->
                 <th data-switchable="false" data-searchable="false" data-sortable="false" data-field="actions">{{ trans('table.actions') }}</th>
               </tr>
             </thead>

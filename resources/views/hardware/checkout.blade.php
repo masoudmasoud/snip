@@ -231,7 +231,7 @@ include_once($_SERVER['DOCUMENT_ROOT'].'/jdf.php');
             select=link.data("select");
 
             var modal = $(this);
-            modal.find('.modal-title').text('Add a new ' + model);
+            modal.find('.modal-title').text(' بستن');
 
             $('.dynamic-form-row').hide();
             function show_er(selector) {

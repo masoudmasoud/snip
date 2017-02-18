@@ -9,16 +9,14 @@ return array(
     'expiration'        => 'تاریخ انقضا',
     'license_key'       => 'کلید محصول',
     'maintained'        => 'نگهداری',
-    'name'              => 'نام نرم افزار
-',
-    'no_depreciation'   => 'هنوز مستهلک نشده
-',
+    'name'              => 'نام نرم افزار',
+    'no_depreciation'   => 'مستهلک نکردن',
     'purchase_order'    => 'شماره سفارش خرید',
     'reassignable'      => 'واگذاری مجدد
 ',
-    'remaining_seats'   => 'کرسی های باقی مانده
+    'remaining_seats'   => 'تعداد باقی مانده
 ',
-    'seats'             => 'صندلی
+    'seats'             => 'تعداد کاربر/دستگاه
 ',
     'termination_date'  => 'تاریخ پایان
 ',

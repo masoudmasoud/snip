@@ -167,7 +167,7 @@ class AssetMaintenancesController extends Controller
     {
         // Prepare Asset Maintenance Type List
         $assetMaintenanceType = [
-                                    '' => 'Select an asset maintenance type',
+                                    '' => 'نوع تعمیر و نگهداری دارایی را انتخاب کنید',
                                 ] + AssetMaintenance::getImprovementOptions();
         // Mark the selected asset, if it came in
         $selectedAsset = $assetId;

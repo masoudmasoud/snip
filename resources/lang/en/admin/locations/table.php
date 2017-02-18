@@ -16,6 +16,6 @@ return array(
     'address'                   => 'آدرس',
     'zip'                       => 'کد پستی',
     'locations'                 => 'مکانها',
-    'parent'                    => 'مجموعه پدر',
-    'currency'                  => 'مکان ارز',
+    'parent'                    => 'مجموعه بالادست',
+    'currency'                  => 'واحد ارز',
     );

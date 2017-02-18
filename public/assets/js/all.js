@@ -23949,7 +23949,7 @@ b.id!=f.id&&d.push(f.id)}c.$element.val(d.join(c._valueSeparator)),c.$element.tr
             return 'Search';
         },
         formatNoMatches: function () {
-            return 'No matching records found';
+            return 'موردی یافت نشد.';
         },
         formatPaginationSwitch: function () {
             return 'Hide/Show pagination';

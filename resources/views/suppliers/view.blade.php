@@ -59,9 +59,9 @@
                             </td>
                             <td>
                             @if ($supplierassets->assigned_to != '')
-                                <a href="{{ route('checkin/hardware', $supplierassets->id) }}" class="btn btn-info btn-sm">Checkin</a>
+                                <a href="{{ route('checkin/hardware', $supplierassets->id) }}" class="btn btn-info btn-sm">{{ trans('general.checkin') }}</a>
                             @else
-                                <a href="{{ route('checkout/hardware', $supplierassets->id) }}" class="btn btn-success btn-sm">Checkout</a>
+                                <a href="{{ route('checkout/hardware', $supplierassets->id) }}" class="btn btn-success btn-sm">{{ trans('general.checkout') }}</a>
                             @endif
                             </td>
 
@@ -109,7 +109,7 @@
                   @endif
                   @if (($supplier->city) || ($supplier->state))
                       <br>
-                      {{ $supplier->city }} {{ strtoupper($supplier->state) }} {{ $supplier->zip }} {{ strtoupper($supplier->country) }}
+                      {{ $supplier->city }} {{ strtoupper($supplier->state) }} {{ $supplier->zip }} <!-- {{ strtoupper($supplier->country) }} -->
                   @endif
                   </li>
               @endif

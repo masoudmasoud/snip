@@ -267,7 +267,7 @@ class AssetsController extends Controller
             $asset->logCreate();
             if (Input::get('assigned_to')!='') {
                 $user = User::find(e(Input::get('assigned_to')));
-                $asset->checkOutToUser($user, Auth::user(), date('Y-m-d H:i:s'), '', 'Checked out on asset creation', e(Input::get('name')));
+                $asset->checkOutToUser($user, Auth::user(), date('Y-m-d H:i:s'), '', 'تحویل داده شده در زمان ایجاد دارایی', e(Input::get('name')));
             }
             // Redirect to the asset listing page
             \Session::flash('success', trans('admin/hardware/message.create.success'));
@@ -1778,13 +1778,13 @@ class AssetsController extends Controller
             {
                 if (Gate::allows('assets.checkout')) {
                     $inout = '<a href="' . route('checkout/hardware',
-                            $asset->id) . '" class="btn btn-info btn-sm" title="Checkout this asset to a user" data-toggle="tooltip">' . trans('general.checkout') . '</a>';
+                            $asset->id) . '" class="btn btn-info btn-sm" title="تحویل دادن دارایی به کاربر" data-toggle="tooltip">' . trans('general.checkout') . '</a>';
                 }
 
             } else {
                 if (Gate::allows('assets.checkin')) {
                     $inout = '<a href="' . route('checkin/hardware',
-                            $asset->id) . '" class="btn btn-primary btn-sm" title="Checkin this asset" data-toggle="tooltip">' . trans('general.checkin') . '</a>';
+                            $asset->id) . '" class="btn btn-primary btn-sm" title="تحویل گرفتن دارایی" data-toggle="tooltip">' . trans('general.checkin') . '</a>';
                 }
             }
 
@@ -1799,7 +1799,7 @@ class AssetsController extends Controller
             'serial'        => e($asset->serial),
             'model'         => ($asset->model) ? (string)link_to('/hardware/models/'.$asset->model->id.'/view', e($asset->model->name)) : 'No model',
             'model_number'  => ($asset->model && $asset->model->model_number) ? (string)$asset->model->model_number : '',
-            'status_label'        => ($asset->assigneduser) ? 'Deployed' : ((e($asset->assetstatus)) ? e($asset->assetstatus->name) : ''),
+            'status_label'        => ($asset->assigneduser) ? 'مستقر شده' : ((e($asset->assetstatus)) ? e($asset->assetstatus->name) : ''),
             'assigned_to'        => ($asset->assigneduser) ? (string)link_to(config('app.url').'/admin/users/'.$asset->assigned_to.'/view', e($asset->assigneduser->fullName())) : '',
             'location'      => (($asset->assigneduser) && ($asset->assigneduser->userloc!='')) ? (string)link_to('admin/settings/locations/'.$asset->assigneduser->userloc->id.'/view', e($asset->assigneduser->userloc->name)) : (($asset->defaultLoc!='') ? (string)link_to('admin/settings/locations/'.$asset->defaultLoc->id.'/view', e($asset->defaultLoc->name)) : ''),
             'category'      => (($asset->model) && ($asset->model->category)) ?(string)link_to('/admin/settings/categories/'.$asset->model->category->id.'/view', e($asset->model->category->name)) : '',
