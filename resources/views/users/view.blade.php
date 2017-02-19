@@ -351,12 +351,12 @@
                           </td>
                           <td>
                             @if ($file->filename)
-                            <a href="{{ route('show/userfile', [$user->id, $file->id]) }}" class="btn btn-default">Download</a>
+                            <a href="{{ route('show/userfile', [$user->id, $file->id]) }}" class="btn btn-default">دریافت فایل</a>
                             @endif
                           </td>
                           <td>
                               @can('users.edit')
-                            <a class="btn delete-asset btn-danger btn-sm" href="{{ route('delete/userfile', [$user->id, $file->id]) }}" data-content="Are you sure you wish to delete this file?" data-title="Delete {{ $file->filename }}?"><i class="fa fa-trash icon-white"></i></a>
+                            <a class="btn delete-asset btn-danger btn-sm" href="{{ route('delete/userfile', [$user->id, $file->id]) }}" data-content="آیا از حذف این فایل اطمینان دارید؟" data-title="؟ {{ $file->filename }} حذف"><i class="fa fa-trash icon-white"></i></a>
                               @endcan
                           </td>
                       </tr>

@@ -9,7 +9,7 @@ return array(
     'edit'  					=> 'ویرایش گواهی نامه',
     'filetype_info'				=> 'انواع فایل های مجاز عبارتند از PNG، GIF، JPG، JPEG، DOC، DOCX، PDF، TXT، ZIP و RAR.
 ',
-    'clone'  					=> 'مجوز شگرف',
+    'clone'  					=> 'کپی کردن مجوز',
     'history_for'  				=> 'پیشینه برای ',
     'in_out'  					=> 'داخل / خارج',
     'info'  					=> 'اطلاعات پروانه',

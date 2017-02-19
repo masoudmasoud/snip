@@ -133,7 +133,7 @@
     'recent_activity'		=> 'کارکرد اخیر',
     'remove_company'        => 'حذف انجمن شرکت',
     'reports'				=> 'گزارش‌ها',
-    'requested'				=> 'در خواست شده',
+    'requested'				=> 'درخواست شده',
     'request_canceled'      => 'درخواست لغو شده است',
     'save'  				=> 'ذخیره کردن',
     'select'				=> 'انتخاب',

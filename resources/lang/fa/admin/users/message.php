@@ -42,7 +42,7 @@ return array(
 
     'deletefile' => array(
         'error'   => 'فایل حذف نشد.لطفا دوباره تلاش کنید.',
-        'success' => 'نقش با موفقیت حذف شد.',
+        'success' => 'فایل با موفقیت حذف شد.',
     ),
 
     'upload' => array(

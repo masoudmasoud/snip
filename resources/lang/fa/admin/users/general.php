@@ -5,7 +5,7 @@ return array(
 
     'assets_user'       => 'دارایی های محول شده به کاربر',
     'current_assets'    => 'دارایی های اکنون  برای این کاربر بیرون کشیده شد',
-    'clone'             => 'کلون کاربر',
+    'clone'             => 'کپی کردن کاربر',
     'contact_user'      => 'تماس با:',
     'edit'              => 'ویرایش کاربر',
     'filetype_info'     => 'پسوند های مجاز:png, gif, jpg, jpeg, doc, docx, pdf, txt, zip,Rar',
