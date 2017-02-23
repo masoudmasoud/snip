@@ -369,7 +369,7 @@
                                <i class="fa fa-globe fa-fw"></i> @lang('general.locations')
                            </a>
                        </li>
-					   <!--
+					   
                        <li {!! (Request::is('admin/groups*') ? ' class="active"' : '') !!}>
                            <a href="{{ URL::to('admin/groups') }}">
                                <i class="fa fa-group fa-fw"></i> @lang('general.groups')
@@ -390,7 +390,7 @@
                            <a href="{{ route('app') }}">
                                <i class="fa fa-cog fa-fw"></i> @lang('general.settings')
                            </a>
-                       </li> -->
+                       </li>
                    </ul>
                </li>
                @endcan

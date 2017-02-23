@@ -125,7 +125,7 @@ class CustomField extends Model
     public function formatFieldValuesAsArray() {
         $arr = preg_split("/\\r\\n|\\r|\\n/", $this->field_values);
 
-        $result[''] = 'Select '.strtolower($this->format);
+        $result[''] = 'انتخاب '.strtolower($this->format);
 
         for ($x = 0; $x < count($arr); $x++) {
             $arr_parts = explode('|', $arr[$x]);

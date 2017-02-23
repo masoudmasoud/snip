@@ -527,10 +527,10 @@ class ReportsController extends Controller
         }
 
         if (e(Input::get('asset_name')) == '1') {
-            $header[] = 'Asset Name';
+            $header[] = 'نام دارایی';
         }
         if (e(Input::get('asset_tag')) == '1') {
-            $header[] = 'Asset Tag';
+            $header[] = 'برچسب دارایی';
         }
         if (e(Input::get('manufacturer')) == '1') {
             $header[] = 'Manufacturer';
@@ -540,7 +540,7 @@ class ReportsController extends Controller
             $header[] = 'Model Number';
         }
         if (e(Input::get('category')) == '1') {
-            $header[] = 'Category';
+            $header[] = 'دسته بندی';
         }
         if (e(Input::get('serial')) == '1') {
             $header[] = 'Serial';
@@ -561,7 +561,7 @@ class ReportsController extends Controller
             $header[] = 'Supplier';
         }
         if (e(Input::get('location')) == '1') {
-            $header[] = 'Location';
+            $header[] = 'مکان';
         }
         if (e(Input::get('assigned_to')) == '1') {
             $header[] = 'Assigned To';

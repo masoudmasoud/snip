@@ -134,7 +134,7 @@
                                     <td>{{ date("M d, Y g:i A", $file['modified']) }} </td>
                                     <td>{{ $file['filesize'] }}</td>
                                     <td>
-                                        <a href="#" data-toggle="modal" data-target="#importModal" data-filename={{$file['filename']}} class="btn btn-sm btn-info"><i class="fa fa-spinner process"></i> Process</a>
+                                        <a href="#" data-toggle="modal" data-target="#importModal" data-filename={{$file['filename']}} class="btn btn-sm btn-info"><i class="fa fa-spinner process"></i> پردازش</a>
                                         <a class="btn btn-danger btn-sm" href="import/delete/{{ $file['filename'] }}"><i class="fa fa-trash icon-white"></i></a>
                                     </td>
                                 </tr>
